@@ -1,5 +1,5 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
-
+/*
 public class AppMediator {
 
     private static AppMediator INSTANCE;
@@ -43,3 +43,4 @@ public class AppMediator {
         return null;
     }
 }
+*/
