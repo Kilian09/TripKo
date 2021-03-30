@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Tripko</string>
+    <string name="sobre_corea_text">La República de Corea es un país soberano de Asia Oriental, cuyo
+        territorio comprende la mitad sur de la península de Corea englobando unas tres mil islas
+        que la rodean. Aproximadamente la mitad de la población del país vive en su capital, Seúl,
+        o en su zona metropolitana, que es una de las áreas metropolitanas más pobladas del mundo.
+        Corea es una de las civilizaciones más antiguas del mundo, su idioma oficial es el coreano y
+        su moneda el won coreano.</string>
+    <string name="sobre_corea_title">Sobre Corea del Sur</string>
+    <string name="tripko_text">TripKo</string>
+    <string name="clima_title">Clima</string>
+    <string name="clima_text">   El clima de Corea del Sur es básicamente continental, con inviernos
+        fríos y secos y veranos cálidos y lluviosos. La temperatura media de Seúl en enero es de –5 °C,
+        y en julio de 25 °C. Las temperaturas del invierno son más elevadas a lo largo de la costa
+        meridional y bastante más bajas en el interior montañoso.</string>
+    <string name="ciudades_principales_title">Ciudades principales</string>
+    <string name="ciudades_principales_text">   Ya sea por la cantidad de población de la ciudad,
+        por su gastronomía, cultura o zonas turísticas... Estas son las cinco principales ciudades
+        de Corea del Sur:</string>
+    <string name="sobre_corea_text2">Más información</string>
+    <string name="sobre_corea_btn_text">Sobre Corea del Sur</string>
+    <string name="entretenimineto_btn_text">Entretenimiento</string>
+    <string name="sitios_turisticos_btn_text">Sitios Turísticos</string>
+    <string name="sitios_turisticos_text">Museo</string>
+    <string name="entretenimiento_text">Parques</string>
+    <string name="cultura_title">Cultura</string>
+
+
+
+
 </resources>
