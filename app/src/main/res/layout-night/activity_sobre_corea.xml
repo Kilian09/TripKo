@@ -128,7 +128,7 @@
                 android:id="@+id/culturaButton"
                 android:layout_width="match_parent"
                 android:layout_height="95dp"
-                android:background="@drawable/cultura" />
+                android:background="@drawable/cultura_sobre_corea" />
         </LinearLayout>
     </ScrollView>
 
