@@ -24,8 +24,15 @@
     <string name="sitios_turisticos_text">Museo</string>
     <string name="entretenimiento_text">Parques</string>
     <string name="cultura_title">Cultura</string>
-
-
-
-
+    <string name="cultura_text">  Corea del Sur es un país rico culturalmente. Desde sus vestimentas
+        tradicionales, conocidas como Hanbok, hasta su música y tradiciones.</string>
+    <string name="cultura_text2">  Entre las características culturales más destacadas se encuentran:
+        Los coreanos tienen por costumbre quitarse los zapatos antes de entrar en una casa. Es una
+        cuestión de higiene pero también de respeto.
+        El saludo tradicional es una inclinación de cabeza (cuanto más mayor es nuestro  interlocutor,
+        más pronunciada será la inclinación),nada de dar besos. </string>
+    <string name="cultura_text3">
+        A pesar de la extensa cantidad de categorías músicales de este país, la que más destaca a fecha
+        de hoy es el k-pop (Korean popular music), género musical que incluye diversos estilos como
+        la música dance electrónica, hip hop, rap, rock o "R and B"</string>
 </resources>
