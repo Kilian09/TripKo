@@ -86,7 +86,7 @@
                 tools:text="@string/sobre_corea_title" />
 
             <ImageView
-                android:id="@+id/image1"
+                android:id="@+id/restauranteImage1"
                 android:layout_width="match_parent"
                 android:layout_height="237dp"
                 app:srcCompat="@drawable/sobre_corea" />
@@ -99,7 +99,7 @@
                 tools:text="@string/sobre_corea_text" />
 
             <ImageView
-                android:id="@+id/image2"
+                android:id="@+id/restauranteImage2"
                 android:layout_width="match_parent"
                 android:layout_height="165dp"
                 app:srcCompat="@drawable/sobre_corea2" />

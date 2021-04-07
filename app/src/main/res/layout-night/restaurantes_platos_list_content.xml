@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/image1"
+            android:id="@+id/restauranteImage1"
             android:layout_width="137.77dp"
             android:layout_height="98dp"
             android:layout_marginStart="20dp"
@@ -35,7 +35,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/comidaTitleTextView"
+                android:id="@+id/restauranteTitleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/background_dark"
@@ -47,7 +47,7 @@
                 android:id="@+id/comidaContentTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/comidaTitleTextView"
+                android:layout_below="@+id/restauranteTitleTextView"
                 android:textColor="@android:color/background_dark"
                 tools:text="@string/comida_content_text" />
 
@@ -74,7 +74,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/comidaTitle2TextView"
+                android:id="@+id/restauranteTitle2TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/background_dark"
@@ -83,17 +83,17 @@
                 tools:text="@string/comida_title_text" />
 
             <TextView
-                android:id="@+id/comidaContent2TextView"
+                android:id="@+id/restauranteContent2TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/comidaTitle2TextView"
+                android:layout_below="@+id/restauranteTitle2TextView"
                 android:textColor="@android:color/background_dark"
                 tools:text="@string/comida_content_text" />
 
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/image2"
+            android:id="@+id/restauranteImage2"
             android:layout_width="137.77dp"
             android:layout_height="98dp"
             android:layout_marginTop="10dp"

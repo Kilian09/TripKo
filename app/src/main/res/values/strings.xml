@@ -40,4 +40,10 @@
     <string name="transporte_btn_text">Transporte</string>
     <string name="gastronomia_btn_text">Gastronomía</string>
     <string name="contactos_btn_text">Contactos</string>
+    <string name="regiones">Region</string>
+    <string name="imagen_region">imagenRegion</string>
+    <string name="opciones_region">Opciones</string>
+    <string name="restaurante_title_text">Restaurante</string>
+    <string name="restaurante_content_text">Este restaurante estan en ... y posee una gran cantidad y variedad de precios</string>
+    <string name="restaurantes_platos_title">Titulo</string>
 </resources>
