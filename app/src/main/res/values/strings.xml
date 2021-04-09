@@ -46,4 +46,8 @@
     <string name="restaurante_title_text">Restaurante</string>
     <string name="restaurante_content_text">Este restaurante estan en ... y posee una gran cantidad y variedad de precios</string>
     <string name="restaurantes_platos_title">Titulo</string>
+    <string name="cantidad_text_view">Cantidad:</string>
+    <string name="divisa_text">Divisa:</string>
+    <string name="pasar_a_text">Pasar a:</string>
+    <string name="calcular_button_text">Calcular</string>
 </resources>
