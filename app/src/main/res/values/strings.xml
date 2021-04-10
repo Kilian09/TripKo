@@ -50,4 +50,6 @@
     <string name="divisa_text">Divisa:</string>
     <string name="pasar_a_text">Pasar a:</string>
     <string name="calcular_button_text">Calcular</string>
+    <string name="modo_oscuro">Oscuro</string>
+    <string name="idioma_ajustes">Idioma:</string>
 </resources>
