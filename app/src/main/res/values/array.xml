@@ -6,4 +6,18 @@
         <item>Ingles</item>
     </string-array>
 
+    <string-array name="Divisa">
+        <item>Euro</item>
+        <item>KRW</item>
+        <item>Dolar</item>
+        <item>Libra</item>
+    </string-array>
+
+    <string-array name="PasarA">
+        <item>KRW</item>
+        <item>Euro</item>
+        <item>Dolar</item>
+        <item>Libra</item>
+    </string-array>
+
 </resources>
