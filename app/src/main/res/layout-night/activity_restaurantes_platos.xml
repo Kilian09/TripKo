@@ -15,7 +15,6 @@
         android:orientation="vertical">
 
         <include
-            android:id="toolbar"
             layout="@layout/toolbar" />
 
 
@@ -41,7 +40,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu_desplegable">
+        app:menu="@menu/menu_lateral">
 
     </NavigationView>
 
