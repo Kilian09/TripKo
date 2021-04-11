@@ -24,6 +24,7 @@
             android:fontFamily="@font/rancho"
             android:text="TRIPKO"
             android:textAlignment="center"
+            android:textColor="#F2A490"
             android:textSize="30sp"
             android:textStyle="bold">
 
