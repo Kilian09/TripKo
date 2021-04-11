@@ -9,9 +9,10 @@
     android:layout_height="wrap_content"
     android:background="@color/dark_blue_variant"
     android:minHeight="?attr/actionBarSize"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:theme="@style/ToolbariconColor"
     app:buttonGravity="center_vertical"
     app:menu="@menu/menu_toolbar"
+    app:navigationIcon="@drawable/ic_baseline_menu_24"
     app:title="TRIPKO">
 
     <LinearLayout

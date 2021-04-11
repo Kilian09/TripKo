@@ -4,9 +4,10 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"
-        app:showAsAction="always"/>
+        android:title="Home"
+        app:showAsAction="always"
+        android:iconTint="@color/icon_color"/>
 
 </menu>
 
