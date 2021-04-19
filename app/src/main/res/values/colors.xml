@@ -3,9 +3,13 @@
     <color name="principal_blue">#478BA2</color>
     <color name="dark_blue_variant">#2F6172</color>
 
+    <color name="black_transparency">#000000</color>
+
     <color name="shadow_orange">#FF4D00</color>
     <color name="principal_orange">#F2A490</color>
     <color name="light_orange">#FFFFFFFF</color>
+
+    <color name="toolbar_background">#478BA2</color>
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
