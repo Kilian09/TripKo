@@ -12,7 +12,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="iconTint">@color/white</item>
+    </style>
 
-        <item name="iconTint">@color/light_orange</item>
+    <style name="ToolbariconColor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryVariant"></item>
+        <item name="colorOnPrimary"></item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary"> </item>
+        <item name="colorSecondaryVariant"> </item>
+        <item name="colorOnSecondary"></item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="iconTint">@color/white</item>
+
     </style>
 </resources>
