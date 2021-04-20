@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expresiones_category_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20sp"
+    android:layout_marginTop="15sp"
+    android:layout_marginBottom="15sp"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+        <TextView
+            android:id="@+id/expresion_category_txt"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:textColor="@color/dark_blue_variant"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="@string/expresionsCategory"
+            android:gravity="center"
+            android:background="@drawable/idioma_btn_shape"/>
+
+
+    </LinearLayout>
