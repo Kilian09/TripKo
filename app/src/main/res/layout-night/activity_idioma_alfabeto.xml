@@ -8,6 +8,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
+    tools:context=".idioma_alfabeto.Idioma_AlfabetoActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
