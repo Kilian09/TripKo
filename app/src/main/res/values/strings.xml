@@ -73,4 +73,6 @@
     <string name="idioma_ajustes">Idioma:</string>
     <string name="vacio">(???)</string>
     <string name="home">Home</string>
+    <string name="contactos_info">Contactos Info</string>
+    <string name="contactos_title">Contactos Title</string>
 </resources>
