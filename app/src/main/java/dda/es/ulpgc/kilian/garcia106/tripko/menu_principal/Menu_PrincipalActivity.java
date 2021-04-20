@@ -1,10 +1,14 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.menu_principal;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
+import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListActivity;
+import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaActivity;
+import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryActivity;
 
 public class Menu_PrincipalActivity
         extends AppCompatActivity implements Menu_PrincipalContract.View {
@@ -81,8 +85,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToIdiomaScreen() {
-        //Intent intent = new Intent(this, IdiomaActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, IdiomaActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -93,8 +97,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToTransporteScreen() {
-        //Intent intent = new Intent(this, Transporte_CategoryActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Transporte_CategoryActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -117,8 +121,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToContactosScreen() {
-        //Intent intent = new Intent(this, ContactosActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Contactos_ListActivity.class);
+        startActivity(intent);
     }
 
     @Override

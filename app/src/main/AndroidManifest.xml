@@ -16,6 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".idioma.IdiomaActivity"/>
+        <activity android:name=".idioma_coreano.Idioma_CoreanoActivity"/>
+        <activity android:name=".idioma_alfabeto.Idioma_AlfabetoActivity"/>
+        <activity android:name=".idioma_expresiones_category.Idioma_Expresiones_CategoryActivity"/>
+        <activity android:name=".idioma_expresiones_detail_list.Idioma_Expresiones_Detail_ListActivity"/>
+        <activity android:name=".transporte_category.Transporte_CategoryActivity"/>
+        <activity android:name=".transporte_subcategory.Transporte_SubcategoryActivity"/>
+        <activity android:name=".transporte_detail_list.Transporte_Detail_ListActivity"/>
+        <activity android:name=".contactos_list.Contactos_ListActivity"/>
+
+
+
+
     </application>
 
 </manifest>
