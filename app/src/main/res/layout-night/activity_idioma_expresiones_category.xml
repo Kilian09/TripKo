@@ -8,6 +8,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
+    tools:context=".idioma_expresiones_category.Idioma_Expresiones_CategoryActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
