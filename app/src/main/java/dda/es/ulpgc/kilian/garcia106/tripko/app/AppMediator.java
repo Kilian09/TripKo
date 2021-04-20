@@ -1,19 +1,19 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
-/*
+
+import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalState;
+
 public class AppMediator {
 
     private static AppMediator INSTANCE;
 
-    private AppMediatorState mAppMediatorState;
+    private Menu_PrincipalState menuPrincipalState = new Menu_PrincipalState();
 
     private AppMediator() {
-        mAppMediatorState = new AppMediatorState();
     }
 
     public static void resetInstance() {
         INSTANCE = null;
     }
-
 
     public static AppMediator getInstance() {
         if (INSTANCE == null) {
@@ -23,24 +23,13 @@ public class AppMediator {
         return INSTANCE;
     }
 
-    public AppMediatorState getAppMediatorState() {
-        return mAppMediatorState;
+
+    public Menu_PrincipalState getMenuPrincipalState() {
+        return menuPrincipalState;
     }
 
-    public NextToAppMediatorState getNextAppMediatorScreenState() {
-        return null;
+    public void setMenuPrincipalState (Menu_PrincipalState menuPrincipalState){
+        this.menuPrincipalState = menuPrincipalState;
     }
 
-    public void setNextAppMediatorScreenState(AppMediatorToNextState state) {
-
-    }
-
-    public void setPreviousAppMediatorScreenState(AppMediatorToPreviousState state) {
-
-    }
-
-    public PreviousToAppMediatorState getPreviousAppMediatorScreenState() {
-        return null;
-    }
 }
-*/
