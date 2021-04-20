@@ -1,5 +1,6 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
@@ -12,11 +13,14 @@ public class AppMediator {
     private static AppMediator INSTANCE;
 
     private Menu_PrincipalState menuPrincipalState = new Menu_PrincipalState();
+
     private IdiomaState idiomaState = new IdiomaState();
     private Idioma_AlfabetoState idioma_alfabetoState = new Idioma_AlfabetoState();
     private Idioma_CoreanoState idioma_coreanoState = new Idioma_CoreanoState();
     private Idioma_Expresiones_CategoryState expresiones_categoryState = new Idioma_Expresiones_CategoryState();
     private Idioma_Expresiones_Detail_ListState expresiones_detail_listState = new Idioma_Expresiones_Detail_ListState();
+
+    private Contactos_ListState contactos_listState = new Contactos_ListState();
 
     private AppMediator() {
     }
@@ -80,5 +84,13 @@ public class AppMediator {
 
     public void setIdioma_Expresiones_Detail_ListState(Idioma_Expresiones_Detail_ListState expresiones_detail_listState) {
         this.expresiones_detail_listState = expresiones_detail_listState;
+    }
+
+    public Contactos_ListState getContactos_ListState() {
+        return contactos_listState;
+    }
+
+    public void setContactos_ListState(Contactos_ListState contactos_listState) {
+        this.contactos_listState = contactos_listState;
     }
 }
