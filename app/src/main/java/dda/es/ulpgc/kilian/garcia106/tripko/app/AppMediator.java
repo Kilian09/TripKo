@@ -7,6 +7,9 @@ import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_category.Idioma_Expresiones_CategoryState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_detail_list.Idioma_Expresiones_Detail_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalState;
+import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryState;
+import dda.es.ulpgc.kilian.garcia106.tripko.transporte_detail_list.Transporte_Detail_ListState;
+import dda.es.ulpgc.kilian.garcia106.tripko.transporte_subcategory.Transporte_SubcategoryState;
 
 public class AppMediator {
 
@@ -21,6 +24,10 @@ public class AppMediator {
     private Idioma_Expresiones_Detail_ListState expresiones_detail_listState = new Idioma_Expresiones_Detail_ListState();
 
     private Contactos_ListState contactos_listState = new Contactos_ListState();
+
+    private Transporte_CategoryState transporte_categoryState = new Transporte_CategoryState();
+    private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
+    private Transporte_Detail_ListState transporte_detail_listState = new Transporte_Detail_ListState();
 
     private AppMediator() {
     }
@@ -92,5 +99,29 @@ public class AppMediator {
 
     public void setContactos_ListState(Contactos_ListState contactos_listState) {
         this.contactos_listState = contactos_listState;
+    }
+
+    public Transporte_CategoryState getTransporte_CategoryState() {
+        return transporte_categoryState;
+    }
+
+    public void setTransporte_CategoryState(Transporte_CategoryState transporte_categoryState) {
+        this.transporte_categoryState = transporte_categoryState;
+    }
+
+    public Transporte_SubcategoryState getTransporte_SubcategoryState() {
+        return transporte_subcategoryState;
+    }
+
+    public void setTransporte_SubcategoryState(Transporte_SubcategoryState transporte_subcategoryState) {
+        this.transporte_subcategoryState = transporte_subcategoryState;
+    }
+
+    public Transporte_Detail_ListState getTransporte_Detail_ListState() {
+        return transporte_detail_listState;
+    }
+
+    public void setTransporte_Detail_ListState(Transporte_Detail_ListState transporte_detail_listState) {
+        this.transporte_detail_listState = transporte_detail_listState;
     }
 }
