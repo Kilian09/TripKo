@@ -1,5 +1,6 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalState;
 
 public class AppMediator {
@@ -7,6 +8,7 @@ public class AppMediator {
     private static AppMediator INSTANCE;
 
     private Menu_PrincipalState menuPrincipalState = new Menu_PrincipalState();
+    private IdiomaState idiomaState = new IdiomaState();
 
     private AppMediator() {
     }
@@ -32,4 +34,11 @@ public class AppMediator {
         this.menuPrincipalState = menuPrincipalState;
     }
 
+    public IdiomaState getIdiomaState() {
+        return idiomaState;
+    }
+
+    public void setIdiomaState(IdiomaState idiomaState) {
+        this.idiomaState = idiomaState;
+    }
 }
