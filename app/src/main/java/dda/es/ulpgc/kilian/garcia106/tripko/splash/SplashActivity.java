@@ -54,6 +54,7 @@ public class SplashActivity
         this.presenter = presenter;
     }
 
+
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
