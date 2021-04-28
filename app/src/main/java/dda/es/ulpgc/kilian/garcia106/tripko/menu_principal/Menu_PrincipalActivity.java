@@ -2,10 +2,15 @@ package dda.es.ulpgc.kilian.garcia106.tripko.menu_principal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListActivity;
@@ -19,6 +24,12 @@ public class Menu_PrincipalActivity
 
     private Menu_PrincipalContract.Presenter presenter;
 
+    private Toolbar toolbar;
+
+    private DrawerLayout drawerLayout;
+
+    private NavigationView navigationView;
+
     private LinearLayout sobreCoreaBtn, idiomaBtn, conversionDeMonedaBtn, transporteBtn,
             entretenimientoBtn, gastronomiaBtn, sitiosTuristicosBtn, contactosBtn;
 
@@ -26,6 +37,13 @@ public class Menu_PrincipalActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
+        toolbar = findViewById(R.id.toolbar_top);
+        setSupportActionBar(toolbar);
+
+        drawerLayout = findViewById(R.id.drawerLayout);
+
+     //   navigationView = findViewById(R.id.navigationView);
 
         sobreCoreaBtn = findViewById(R.id.sobreCorea_btn);
         idiomaBtn = findViewById(R.id.idioma_btn);
@@ -85,13 +103,7 @@ public class Menu_PrincipalActivity
             }
         });
 
-        //getSupportActionBar().setTitle(R.string.app_name);
 
-    /*
-    if(savedInstanceState == null) {
-      AppMediator.resetInstance();
-    }
-    */
 
         // do the setup
         Menu_PrincipalScreen.configure(this);
@@ -132,6 +144,14 @@ public class Menu_PrincipalActivity
 
         presenter.onDestroy();
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
 
     @Override
     public void onDataUpdated(Menu_PrincipalViewModel viewModel) {
