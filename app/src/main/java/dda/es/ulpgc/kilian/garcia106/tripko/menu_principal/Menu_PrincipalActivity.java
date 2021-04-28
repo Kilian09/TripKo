@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -30,6 +31,8 @@ public class Menu_PrincipalActivity
 
     private NavigationView navigationView;
 
+    private TextView tripkoTitleText;
+
     private LinearLayout sobreCoreaBtn, idiomaBtn, conversionDeMonedaBtn, transporteBtn,
             entretenimientoBtn, gastronomiaBtn, sitiosTuristicosBtn, contactosBtn;
 
@@ -42,6 +45,9 @@ public class Menu_PrincipalActivity
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawerLayout);
+
+        tripkoTitleText = findViewById(R.id.tripkoText);
+        tripkoTitleText.setText(R.string.app_name);
 
      //   navigationView = findViewById(R.id.navigationView);
 
@@ -145,20 +151,20 @@ public class Menu_PrincipalActivity
         presenter.onDestroy();
     }
 
-
+/*Metodo que permite ver el boton home
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
+*/
 
     @Override
     public void onDataUpdated(Menu_PrincipalViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-        //((TextView) findViewById(R.id.data)).setText(viewModel.data);
+
     }
 
     @Override
