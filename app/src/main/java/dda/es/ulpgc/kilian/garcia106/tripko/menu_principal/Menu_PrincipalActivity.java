@@ -2,6 +2,8 @@ package dda.es.ulpgc.kilian.garcia106.tripko.menu_principal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,11 +19,73 @@ public class Menu_PrincipalActivity
 
     private Menu_PrincipalContract.Presenter presenter;
 
+    private LinearLayout sobreCoreaBtn, idiomaBtn, conversionDeMonedaBtn, transporteBtn,
+            entretenimientoBtn, gastronomiaBtn, sitiosTuristicosBtn, contactosBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
-        getSupportActionBar().setTitle(R.string.app_name);
+
+        sobreCoreaBtn = findViewById(R.id.sobreCorea_btn);
+        idiomaBtn = findViewById(R.id.idioma_btn);
+        conversionDeMonedaBtn = findViewById(R.id.conversion_de_moneda_btn);
+        transporteBtn = findViewById(R.id.transporte_btn);
+        entretenimientoBtn = findViewById(R.id.entretenimiento_btn);
+        gastronomiaBtn = findViewById(R.id.gastronomia_btn);
+        sitiosTuristicosBtn = findViewById(R.id.sitios_turisticos_btn);
+        contactosBtn = findViewById(R.id.contactos_de_interes_btn);
+
+        sobreCoreaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(0);
+            }
+        });
+        idiomaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(1);
+            }
+        });
+        conversionDeMonedaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(2);
+            }
+        });
+        transporteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(3);
+            }
+        });
+        entretenimientoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(4);
+            }
+        });
+        gastronomiaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(5);
+            }
+        });
+        sitiosTuristicosBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(6);
+            }
+        });
+        contactosBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presenter.onMenuOptionClicked(7);
+            }
+        });
+
+        //getSupportActionBar().setTitle(R.string.app_name);
 
     /*
     if(savedInstanceState == null) {

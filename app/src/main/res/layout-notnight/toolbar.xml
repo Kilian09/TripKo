@@ -8,7 +8,7 @@
     android:id="@+id/toolbar_top"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/toolbar_background"
+    android:background="@color/principal_blue"
     android:minHeight="?attr/actionBarSize"
     android:theme="@style/ToolbariconColor"
     app:buttonGravity="center_vertical"
