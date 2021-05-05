@@ -27,6 +27,7 @@
         <activity android:name=".transporte_subcategory.Transporte_SubcategoryActivity"/>
         <activity android:name=".transporte_detail_list.Transporte_Detail_ListActivity"/>
         <activity android:name=".contactos_list.Contactos_ListActivity"/>
+        <activity android:name=".sobre_corea.Sobre_CoreaActivity"/>
 
     </application>
 

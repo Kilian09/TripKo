@@ -7,6 +7,7 @@ import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_category.Idioma_Expresiones_CategoryState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_detail_list.Idioma_Expresiones_Detail_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalState;
+import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryState;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_detail_list.Transporte_Detail_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_subcategory.Transporte_SubcategoryState;
@@ -28,6 +29,8 @@ public class AppMediator {
     private Transporte_CategoryState transporte_categoryState = new Transporte_CategoryState();
     private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
     private Transporte_Detail_ListState transporte_detail_listState = new Transporte_Detail_ListState();
+
+    private Sobre_CoreaState sobreCoreaState;
 
     private AppMediator() {
     }
@@ -124,4 +127,13 @@ public class AppMediator {
     public void setTransporte_Detail_ListState(Transporte_Detail_ListState transporte_detail_listState) {
         this.transporte_detail_listState = transporte_detail_listState;
     }
+
+    public Sobre_CoreaState getSobre_CoreaState() {
+        return sobreCoreaState;
+    }
+
+    public void setSobre_CoreaState(Sobre_CoreaState sobreCoreaState) {
+        this.sobreCoreaState = sobreCoreaState;
+    }
+
 }
