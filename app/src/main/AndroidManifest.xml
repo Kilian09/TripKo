@@ -28,9 +28,6 @@
         <activity android:name=".transporte_detail_list.Transporte_Detail_ListActivity"/>
         <activity android:name=".contactos_list.Contactos_ListActivity"/>
 
-
-
-
     </application>
 
 </manifest>

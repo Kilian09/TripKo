@@ -10,10 +10,10 @@
     android:layout_height="wrap_content"
     android:background="@color/principal_blue"
     android:minHeight="?attr/actionBarSize"
-    android:theme="@style/ToolbariconColor"
     app:buttonGravity="center_vertical"
+    app:homeIcon="@drawable/home"
     app:menu="@menu/menu_toolbar"
-    app:navigationIcon="@drawable/ic_baseline_menu_24"
+    app:navigationIcon="@drawable/menu_desplegable"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
