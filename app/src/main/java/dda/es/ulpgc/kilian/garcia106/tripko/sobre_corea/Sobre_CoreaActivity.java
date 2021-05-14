@@ -71,17 +71,14 @@ public class Sobre_CoreaActivity
 
         presenter.onDestroy();
     }
-/*
+
     @Override
     public void onDataUpdated(Sobre_CoreaViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-        ((TextView) findViewById(R.id.data)).setText(viewModel.data);
+    //    ((TextView) findViewById(R.id.data)).setText(viewModel.data);
     }
-
- */
-
 
     @Override
     public void navigateToNextScreen() {

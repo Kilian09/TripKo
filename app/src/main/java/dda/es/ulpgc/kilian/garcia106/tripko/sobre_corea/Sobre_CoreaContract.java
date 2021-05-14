@@ -7,7 +7,7 @@ public interface Sobre_CoreaContract {
     interface View {
         void injectPresenter(Presenter presenter);
 
-        //void onDataUpdated(Sobre_CoreaViewModel viewModel);
+        void onDataUpdated(Sobre_CoreaViewModel viewModel);
 
         void navigateToNextScreen();
     }
