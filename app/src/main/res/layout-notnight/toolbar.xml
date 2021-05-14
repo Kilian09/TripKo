@@ -11,7 +11,7 @@
     android:background="@color/principal_blue"
     android:minHeight="?attr/actionBarSize"
     app:buttonGravity="center_vertical"
-    app:homeIcon="@drawable/home"
+
     app:menu="@menu/menu_toolbar"
     app:navigationIcon="@drawable/menu_desplegable"
     tools:ignore="MissingDefaultResource">

@@ -3,10 +3,11 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerLayout2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:id="@+id/conversorMonedaDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    tools:context=".conversor_moneda.Conversor_MonedaActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -14,8 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar" />
+        <include layout="@layout/toolbar" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
             </LinearLayout>
 
             <Space
-                android:layout_width="120dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent" />
 
             <LinearLayout
@@ -129,6 +129,7 @@
 
     </LinearLayout>
 
+    <!--
     <NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -137,6 +138,7 @@
         app:menu="@menu/menu_lateral">
 
     </NavigationView>
+-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
 

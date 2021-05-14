@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".conversor_moneda.Conversor_MonedaActivity"/>
         <activity android:name=".idioma.IdiomaActivity"/>
         <activity android:name=".menu_principal.Menu_PrincipalActivity"/>
         <activity android:name=".idioma_coreano.Idioma_CoreanoActivity"/>

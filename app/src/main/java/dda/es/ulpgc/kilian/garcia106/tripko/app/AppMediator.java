@@ -1,6 +1,7 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
+import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
@@ -25,6 +26,8 @@ public class AppMediator {
     private Idioma_Expresiones_Detail_ListState expresiones_detail_listState = new Idioma_Expresiones_Detail_ListState();
 
     private Contactos_ListState contactos_listState = new Contactos_ListState();
+
+    private Conversor_MonedaState conversor_monedaState = new Conversor_MonedaState();
 
     private Transporte_CategoryState transporte_categoryState = new Transporte_CategoryState();
     private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
@@ -126,6 +129,14 @@ public class AppMediator {
 
     public void setTransporte_Detail_ListState(Transporte_Detail_ListState transporte_detail_listState) {
         this.transporte_detail_listState = transporte_detail_listState;
+    }
+
+    public Conversor_MonedaState getConversor_MonedaState() {
+        return conversor_monedaState;
+    }
+
+    public void setConversor_MonedaState(Conversor_MonedaState conversor_monedaState) {
+        this.conversor_monedaState = conversor_monedaState;
     }
 
     public Sobre_CoreaState getSobre_CoreaState() {
