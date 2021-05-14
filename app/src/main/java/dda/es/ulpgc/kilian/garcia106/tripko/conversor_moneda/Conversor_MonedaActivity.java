@@ -2,6 +2,10 @@ package dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +29,9 @@ public class Conversor_MonedaActivity
 
     private NavigationView navigationView;
 
-    private TextView tripkoTitleText;
+    private TextView tripkoTitleText,cantidadText,divisaText,pasarAText,resultadoText;
+    private Spinner divisaSpinner, pasarASpinner;
+    private Button calcularButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +42,21 @@ public class Conversor_MonedaActivity
         toolbar = findViewById(R.id.toolbar_top);
         setSupportActionBar(toolbar);
 
-        drawerLayout = findViewById(R.id.drawerLayout);
+        drawerLayout = findViewById(R.id.conversorMonedaDrawerLayout);
 
         tripkoTitleText = findViewById(R.id.tripkoText);
         tripkoTitleText.setText(R.string.app_name);
+
+        cantidadText = findViewById(R.id.cantidadTextView);
+        divisaText = findViewById(R.id.divisaTextView);
+        pasarAText = findViewById(R.id.pasarATextView);
+        resultadoText = findViewById(R.id.resultadoTextView);
+
+        divisaSpinner = findViewById(R.id.divisaSpinner);
+        pasarASpinner = findViewById(R.id.pasarASpinner);
+
+        calcularButton = findViewById(R.id.calcularButton);
+
 
         // do the setup
         Conversor_MonedaScreen.configure(this);
@@ -82,13 +99,21 @@ public class Conversor_MonedaActivity
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     public void onDataUpdated(Conversor_MonedaViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-      //  ((TextView) findViewById(R.id.data)).setText(viewModel.data);
+        ((TextView) findViewById(R.id.cantidadTextView)).setText(R.string.cantidad_text_view);
+        ((TextView) findViewById(R.id.divisaTextView)).setText(R.string.divisa_text);
+        ((TextView) findViewById(R.id.pasarATextView)).setText(R.string.pasar_a_text);
+        ((TextView) findViewById(R.id.resultadoTextView)).setText(viewModel.resultado);
     }
-
 
     @Override
     public void navigateToNextScreen() {

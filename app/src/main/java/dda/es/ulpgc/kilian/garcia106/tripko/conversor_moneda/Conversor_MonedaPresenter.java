@@ -26,7 +26,7 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
         state = new Conversor_MonedaState();
 
         // call the model and update the state
-        state.data = model.getStoredData();
+
 
     }
 
@@ -35,7 +35,7 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
         // Log.e(TAG, "onRestart()");
 
         // update the model if is necessary
-        model.onRestartScreen(state.data);
+
     }
 
     @Override
