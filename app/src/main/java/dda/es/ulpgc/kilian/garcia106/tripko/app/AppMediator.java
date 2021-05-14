@@ -1,5 +1,6 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
@@ -34,6 +35,8 @@ public class AppMediator {
     private Transporte_Detail_ListState transporte_detail_listState = new Transporte_Detail_ListState();
 
     private Sobre_CoreaState sobreCoreaState;
+
+    private ClimaState climaState;
 
     private AppMediator() {
     }
@@ -147,4 +150,5 @@ public class AppMediator {
         this.sobreCoreaState = sobreCoreaState;
     }
 
+    public ClimaState getClimaState() { return  climaState; }
 }
