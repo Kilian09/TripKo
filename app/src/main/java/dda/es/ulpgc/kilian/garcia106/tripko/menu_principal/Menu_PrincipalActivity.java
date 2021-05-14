@@ -15,6 +15,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListActivity;
+import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryActivity;
 
@@ -181,8 +182,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToConversionDeMonedaScreen() {
-        //Intent intent = new Intent(this, Conversor_MonedaActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Conversor_MonedaActivity.class);
+        startActivity(intent);
     }
 
     @Override
