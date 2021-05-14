@@ -45,7 +45,7 @@ public class Menu_PrincipalActivity
         toolbar = findViewById(R.id.toolbar_top);
         setSupportActionBar(toolbar);
 
-        drawerLayout = findViewById(R.id.drawerLayout);
+        drawerLayout = findViewById(R.id.menuDrawerLayout);
 
         tripkoTitleText = findViewById(R.id.tripkoText);
         tripkoTitleText.setText(R.string.app_name);
@@ -109,8 +109,6 @@ public class Menu_PrincipalActivity
                 presenter.onMenuOptionClicked(7);
             }
         });
-
-
 
         // do the setup
         Menu_PrincipalScreen.configure(this);
