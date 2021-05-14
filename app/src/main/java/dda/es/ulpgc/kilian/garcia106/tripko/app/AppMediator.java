@@ -3,6 +3,7 @@ package dda.es.ulpgc.kilian.garcia106.tripko.app;
 import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
+import dda.es.ulpgc.kilian.garcia106.tripko.cultura.CulturaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
@@ -37,6 +38,8 @@ public class AppMediator {
     private Sobre_CoreaState sobreCoreaState;
 
     private ClimaState climaState;
+
+    private CulturaState culturaState;
 
     private AppMediator() {
     }
@@ -151,4 +154,6 @@ public class AppMediator {
     }
 
     public ClimaState getClimaState() { return  climaState; }
+
+    public CulturaState getCulturaState() { return culturaState; }
 }
