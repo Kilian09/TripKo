@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@color/dark_background"
     android:fitsSystemWindows="true"
     tools:context=".idioma_coreano.Idioma_CoreanoActivity"
     tools:ignore="MissingDefaultResource">
@@ -74,8 +74,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/el_idioma_coreano_txt2"/>
-<!--                    app:srcCompat="@drawable/idioma_coreano_img1" />-->
+                    app:layout_constraintTop_toBottomOf="@id/el_idioma_coreano_txt2" />
+                <!--                    app:srcCompat="@drawable/idioma_coreano_img1" />-->
 
                 <TextView
                     android:id="@+id/el_idioma_coreano_txt3"
@@ -98,8 +98,8 @@
                     app:layout_constraintBottom_toTopOf="@id/honorificos_title"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/el_idioma_coreano_txt3"/>
-<!--                    app:srcCompat="@drawable/idioma_coreano_img2" />-->
+                    app:layout_constraintTop_toBottomOf="@id/el_idioma_coreano_txt3" />
+                <!--                    app:srcCompat="@drawable/idioma_coreano_img2" />-->
 
                 <TextView
                     android:id="@+id/honorificos_title"
@@ -107,8 +107,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:text="@string/honorificos_title"
-                    android:textStyle="bold"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@id/honorificos_text1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +135,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/honorificos_text1" />
-<!--                    app:srcCompat="@drawable/honorificos_img1" />-->
+                <!--                    app:srcCompat="@drawable/honorificos_img1" />-->
 
                 <TextView
                     android:id="@+id/honorificos_text2"

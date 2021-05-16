@@ -11,6 +11,7 @@
 
     <!--    COLORS PARA NIGHT THEME   -->
     <color name="light_orange">#FFFFFFFF</color>
+    <color name= "dark_background">#242330</color>
 
     <!--    COLORS COMUNES   -->
     <color name="black">#FF000000</color>

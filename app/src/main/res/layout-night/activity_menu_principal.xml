@@ -5,6 +5,7 @@
     android:id="@+id/drawerLayout2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@color/dark_background"
     android:fitsSystemWindows="true"
     tools:context=".menu_principal.Menu_PrincipalActivity"
     tools:ignore="MissingDefaultResource">
@@ -16,233 +17,233 @@
 
         <include layout="@layout/toolbar" />
 
-            <ScrollView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menu_buttons"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="8dp">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/menu_buttons"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp">
+                <LinearLayout
+                    android:id="@+id/sobreCorea_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/conversion_de_moneda_btn"
+                    app:layout_constraintEnd_toStartOf="@id/idioma_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <LinearLayout
-                        android:id="@+id/sobreCorea_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="210dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <ImageView
+                        android:id="@+id/sobreCorea_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:srcCompat="@drawable/ic_btn_sobre_corea" />
+
+                    <TextView
+                        android:id="@+id/sobreCorea_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/conversion_de_moneda_btn"
-                        app:layout_constraintEnd_toStartOf="@id/idioma_btn"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:text="@string/sobre_corea_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/sobreCorea_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="16dp"
-                            app:srcCompat="@drawable/ic_btn_sobre_corea" />
+                <LinearLayout
+                    android:id="@+id/idioma_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/transporte_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/sobreCorea_btn"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                        <TextView
-                            android:id="@+id/sobreCorea_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/sobre_corea_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/idioma_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        app:srcCompat="@drawable/ic_btn_idioma" />
 
-                    <LinearLayout
-                        android:id="@+id/idioma_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/idioma_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/transporte_btn"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/sobreCorea_btn"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:text="@string/idioma_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/idioma_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="32dp"
-                            app:srcCompat="@drawable/ic_btn_idioma" />
+                <LinearLayout
+                    android:id="@+id/conversion_de_moneda_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/entretenimiento_btn"
+                    app:layout_constraintEnd_toStartOf="@id/transporte_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sobreCorea_btn">
 
-                        <TextView
-                            android:id="@+id/idioma_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/idioma_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/conversion_de_moneda_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        app:srcCompat="@drawable/ic_btn_conversion_de_moneda" />
 
-                    <LinearLayout
-                        android:id="@+id/conversion_de_moneda_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/conversion_de_moneda_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/entretenimiento_btn"
-                        app:layout_constraintEnd_toStartOf="@id/transporte_btn"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/sobreCorea_btn">
+                        android:text="@string/conversion_de_moneda_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/conversion_de_moneda_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="32dp"
-                            app:srcCompat="@drawable/ic_btn_conversion_de_moneda" />
+                <LinearLayout
+                    android:id="@+id/transporte_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/gastronomia_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/conversion_de_moneda_btn"
+                    app:layout_constraintTop_toBottomOf="@id/idioma_btn">
 
-                        <TextView
-                            android:id="@+id/conversion_de_moneda_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/conversion_de_moneda_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/transporte_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/ic_btn_transporte" />
 
-                    <LinearLayout
-                        android:id="@+id/transporte_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/transporte_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/gastronomia_btn"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/conversion_de_moneda_btn"
-                        app:layout_constraintTop_toBottomOf="@id/idioma_btn">
+                        android:text="@string/transporte_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/transporte_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            app:srcCompat="@drawable/ic_btn_transporte" />
+                <LinearLayout
+                    android:id="@+id/entretenimiento_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/sitios_turisticos_btn"
+                    app:layout_constraintEnd_toStartOf="@id/gastronomia_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/conversion_de_moneda_btn">
 
-                        <TextView
-                            android:id="@+id/transporte_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/transporte_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/entretenimiento_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        app:srcCompat="@drawable/ic_btn_entretenimiento" />
 
-                    <LinearLayout
-                        android:id="@+id/entretenimiento_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/entretenimiento_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/sitios_turisticos_btn"
-                        app:layout_constraintEnd_toStartOf="@id/gastronomia_btn"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/conversion_de_moneda_btn">
+                        android:text="@string/entretenimineto_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/entretenimiento_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="32dp"
-                            app:srcCompat="@drawable/ic_btn_entretenimiento" />
+                <LinearLayout
+                    android:id="@+id/gastronomia_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@id/contactos_de_interes_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/entretenimiento_btn"
+                    app:layout_constraintTop_toBottomOf="@id/transporte_btn">
 
-                        <TextView
-                            android:id="@+id/entretenimiento_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/entretenimineto_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/gastronomia_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        app:srcCompat="@drawable/ic_btn_gastronomia" />
 
-                    <LinearLayout
-                        android:id="@+id/gastronomia_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/gastronomia_btn_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toTopOf="@id/contactos_de_interes_btn"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/entretenimiento_btn"
-                        app:layout_constraintTop_toBottomOf="@id/transporte_btn">
+                        android:text="@string/gastronomia_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/gastronomia_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="24dp"
-                            app:srcCompat="@drawable/ic_btn_gastronomia" />
+                <LinearLayout
+                    android:id="@+id/sitios_turisticos_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/contactos_de_interes_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/entretenimiento_btn">
 
-                        <TextView
-                            android:id="@+id/gastronomia_btn_txt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/gastronomia_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/sitios_turisticos_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/ic_btn_sitios_turisticos" />
 
-                    <LinearLayout
-                        android:id="@+id/sitios_turisticos_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/sitios_turisticos_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@id/contactos_de_interes_btn"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/entretenimiento_btn">
+                        android:text="@string/sitios_turisticos_btn_text" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/sitios_turisticos_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            app:srcCompat="@drawable/ic_btn_sitios_turisticos" />
+                <LinearLayout
+                    android:id="@+id/contactos_de_interes_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:background="@drawable/rectangular_btn_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/sitios_turisticos_btn"
+                    app:layout_constraintTop_toBottomOf="@id/gastronomia_btn">
 
-                        <TextView
-                            android:id="@+id/sitios_turisticos_btn_text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/sitios_turisticos_btn_text" />
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/contactos_de_interes_btn_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        app:srcCompat="@drawable/ic_btn_contactos" />
 
-                    <LinearLayout
-                        android:id="@+id/contactos_de_interes_btn"
-                        android:layout_width="0dp"
-                        android:layout_height="210dp"
-                        android:background="@drawable/rectangular_btn_shape"
+                    <TextView
+                        android:id="@+id/contactos_de_interes_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/sitios_turisticos_btn"
-                        app:layout_constraintTop_toBottomOf="@id/gastronomia_btn">
-
-                        <ImageView
-                            android:id="@+id/contactos_de_interes_btn_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="36dp"
-                            app:srcCompat="@drawable/ic_btn_contactos" />
-
-                        <TextView
-                            android:id="@+id/contactos_de_interes_btn_text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/contactos_btn_text" />
-                    </LinearLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </ScrollView>
+                        android:text="@string/contactos_btn_text" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
     </LinearLayout>
 
     <NavigationView

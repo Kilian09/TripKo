@@ -6,6 +6,7 @@
     android:id="@+id/drawerLayout2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@color/dark_background"
     android:fitsSystemWindows="true">
 
     <LinearLayout
@@ -13,8 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar"></include>
+        <include layout="@layout/toolbar"></include>
 
         <Switch
             android:id="@+id/modoSwitch"
