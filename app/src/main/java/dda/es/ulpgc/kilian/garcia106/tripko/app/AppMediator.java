@@ -1,5 +1,6 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.ciudades_principales.Ciudades_PrincipalesState;
 import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
@@ -35,11 +36,13 @@ public class AppMediator {
     private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
     private Transporte_Detail_ListState transporte_detail_listState = new Transporte_Detail_ListState();
 
-    private Sobre_CoreaState sobreCoreaState;
+    private Sobre_CoreaState sobre_coreaState;
 
     private ClimaState climaState;
 
     private CulturaState culturaState;
+
+    private Ciudades_PrincipalesState ciudades_principalesState;
 
     private AppMediator() {
     }
@@ -146,14 +149,17 @@ public class AppMediator {
     }
 
     public Sobre_CoreaState getSobre_CoreaState() {
-        return sobreCoreaState;
+        return sobre_coreaState;
     }
 
     public void setSobre_CoreaState(Sobre_CoreaState sobreCoreaState) {
-        this.sobreCoreaState = sobreCoreaState;
+        this.sobre_coreaState = sobreCoreaState;
     }
 
     public ClimaState getClimaState() { return  climaState; }
 
     public CulturaState getCulturaState() { return culturaState; }
+
+    public Ciudades_PrincipalesState getCiudades_PrincipalesState() { return ciudades_principalesState;
+    }
 }
