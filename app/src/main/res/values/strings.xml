@@ -1,28 +1,39 @@
 <resources>
     <string name="app_name">TripKo</string>
+    <string name="home">Home</string>
+
+    <!--    Strings de Menu principal -->
+    <string name="tripko_text">TripKo</string>
+    <string name="sobre_corea_btn_text">Sobre Corea del Sur</string>
+    <string name="idioma_btn_text">Idioma</string>
+    <string name="conversion_de_moneda_btn_text">Conversión de Moneda</string>
+    <string name="transporte_btn_text">Transporte</string>
+    <string name="entretenimineto_btn_text">Entretenimiento</string>
+    <string name="gastronomia_btn_text">Gastronomía</string>
+    <string name="sitios_turisticos_btn_text">Sitios Turísticos</string>
+    <string name="contactos_btn_text">Contactos</string>
+
+    <!--    Strings de Sobre Corea -->
+    <string name="sobre_corea_title">Sobre Corea del Sur</string>
     <string name="sobre_corea_text">La República de Corea es un país soberano de Asia Oriental, cuyo
         territorio comprende la mitad sur de la península de Corea englobando unas tres mil islas
         que la rodean. Aproximadamente la mitad de la población del país vive en su capital, Seúl,
         o en su zona metropolitana, que es una de las áreas metropolitanas más pobladas del mundo.
         Corea es una de las civilizaciones más antiguas del mundo, su idioma oficial es el coreano y
         su moneda el won coreano.</string>
-    <string name="sobre_corea_title">Sobre Corea del Sur</string>
-    <string name="tripko_text">TripKo</string>
+    <string name="sobre_corea_text2">Más información</string>
+
     <string name="clima_title">Clima</string>
     <string name="clima_text">   El clima de Corea del Sur es básicamente continental, con inviernos
         fríos y secos y veranos cálidos y lluviosos. La temperatura media de Seúl en enero es de –5 °C,
         y en julio de 25 °C. Las temperaturas del invierno son más elevadas a lo largo de la costa
         meridional y bastante más bajas en el interior montañoso.</string>
+
     <string name="ciudades_principales_title">Ciudades principales</string>
     <string name="ciudades_principales_text">   Ya sea por la cantidad de población de la ciudad,
         por su gastronomía, cultura o zonas turísticas... Estas son las cinco principales ciudades
         de Corea del Sur:</string>
-    <string name="sobre_corea_text2">Más información</string>
-    <string name="sobre_corea_btn_text">Sobre Corea del Sur</string>
-    <string name="entretenimineto_btn_text">Entretenimiento</string>
-    <string name="sitios_turisticos_btn_text">Sitios Turísticos</string>
-    <string name="sitios_turisticos_text">Museo</string>
-    <string name="entretenimiento_text">Parques</string>
+
     <string name="cultura_title">Cultura</string>
     <string name="cultura_text">  Corea del Sur es un país rico culturalmente. Desde sus vestimentas
         tradicionales, conocidas como Hanbok, hasta su música y tradiciones.</string>
@@ -35,15 +46,16 @@
         A pesar de la extensa cantidad de categorías músicales de este país, la que más destaca a fecha
         de hoy es el k-pop (Korean popular music), género musical que incluye diversos estilos como
         la música dance electrónica, hip hop, rap, rock o "R and B"</string>
-    <string name="idioma_btn_text">Idioma</string>
+
+    <!--    Strings de Idioma -->
     <string name="idioma_coreano_btn_text">El idioma coreano</string>
-    <string name="expresiones_btn_text">Expresiones útiles para viajar</string>
     <string name="alfabeto_btn_text">Alfabeto</string>
+    <string name="expresiones_btn_text">Expresiones útiles para viajar</string>
     <string name="el_idioma_coreano_title">El Idioma Coreano</string>
     <string name="el_idioma_coreano_text1">Antiguamente el coreano se escribía en caracteres chinos
         (Hanja), en la actualidad se escribe en "Hangul" que es el alfabeto coreano.</string>
     <string name="el_idioma_coreano_text2"> El "Hangul" tiene 24 letras, 14 de las cuales son
-        consonantes y 10 vocales. La escrituracoreana no es ideográfica como la japonesa o
+        consonantes y 10 vocales. La escritura coreana no es ideográfica como la japonesa o
         la china.</string>
     <string name="el_idioma_coreano_text3">Las formas de las letras del "hangul" se diseñaron
         conforme a los movimientos de la lengua, el paladar y los dientes. Hasta cinco letras
@@ -54,25 +66,39 @@
         aproximadamente la misma edad o mayor, un jefe, maestro… </string>
     <string name="honorificos_text2">Generalmente se usa sustantivos especiales o sufijos en los
         verbos para indicar la superioridad del sujeto. </string>
+
     <string name="expresionsCategory">Expresions Category</string>
-    <string name="conversion_de_moneda_btn_text">Conversión de Moneda</string>
-    <string name="transporte_btn_text">Transporte</string>
-    <string name="gastronomia_btn_text">Gastronomía</string>
-    <string name="contactos_btn_text">Contactos</string>
+
+    <!--    Strings de Conversión de moneda -->
+    <string name="cantidad_text_view">Cantidad:</string>
+    <string name="divisa_text">Divisa:</string>
+    <string name="pasar_a_text">Pasar a:</string>
+    <string name="calcular_button_text">Calcular</string>
+    <string name="vacio">(???)</string>
+
+    <!--    Strings de Transporte -->
+
+    <!--    Strings de Entretenimiento -->
+    <string name="entretenimiento_text">Parques</string>
+
+    <!--    Strings de Gastronomia -->
     <string name="regiones">Region</string>
     <string name="imagen_region">imagenRegion</string>
     <string name="opciones_region">Opciones</string>
     <string name="restaurante_title_text">Restaurante</string>
     <string name="restaurante_content_text">Este restaurante estan en ... y posee una gran cantidad y variedad de precios</string>
     <string name="restaurantes_platos_title">Titulo</string>
-    <string name="cantidad_text_view">Cantidad:</string>
-    <string name="divisa_text">Divisa:</string>
-    <string name="pasar_a_text">Pasar a:</string>
-    <string name="calcular_button_text">Calcular</string>
+
+    <!--    Strings de Sitios Turisticos -->
+    <string name="sitios_turisticos_text">Museo</string>
+
+    <!--    Strings de Contactos -->
+    <string name="contactos_title">Contactos Title</string>
+    <string name="contactos_info">Contactos Info</string>
+
+    <!--    Strings de Ajustes -->
     <string name="modo_oscuro">Oscuro</string>
     <string name="idioma_ajustes">Idioma:</string>
-    <string name="vacio">(???)</string>
-    <string name="home">Home</string>
-    <string name="contactos_info">Contactos Info</string>
-    <string name="contactos_title">Contactos Title</string>
+
+
 </resources>

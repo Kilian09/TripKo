@@ -17,6 +17,7 @@ import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaActivity;
+import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryActivity;
 
 public class Menu_PrincipalActivity
@@ -168,8 +169,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToSobreCoreaScreen() {
-        //Intent intent = new Intent(this, Sobre_CoreaActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Sobre_CoreaActivity.class);
+        startActivity(intent);
     }
 
     @Override
