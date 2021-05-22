@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -29,10 +32,13 @@ public class Conversor_MonedaActivity
 
     private NavigationView navigationView;
 
-    private TextView tripkoTitleText,cantidadText,divisaText,pasarAText,resultadoText;
+    private TextView tripkoTitleText, cantidadText, divisaText, pasarAText, resultadoText;
     private Spinner divisaSpinner, pasarASpinner;
     private Button calcularButton;
+    private EditText cantidadEditText;
+    private String  divisa, pasarA;
 
+    private double cantidad;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,9 +61,21 @@ public class Conversor_MonedaActivity
         divisaSpinner = findViewById(R.id.divisaSpinner);
         pasarASpinner = findViewById(R.id.pasarASpinner);
 
+        cantidadEditText = findViewById(R.id.cantidadInputEditText);
+
         calcularButton = findViewById(R.id.calcularButton);
 
+        calcularButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cantidad = Double.parseDouble(cantidadEditText.getText().toString().trim());
 
+                divisa = divisaSpinner.getSelectedItem().toString();
+                pasarA = pasarASpinner.getSelectedItem().toString();
+
+                presenter.onCalcularClicked(cantidad,divisa, pasarA);
+            }
+        });
         // do the setup
         Conversor_MonedaScreen.configure(this);
 
@@ -68,6 +86,7 @@ public class Conversor_MonedaActivity
             presenter.onRestart();
         }
     }
+
 
     @Override
     protected void onResume() {
@@ -99,7 +118,7 @@ public class Conversor_MonedaActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
     }

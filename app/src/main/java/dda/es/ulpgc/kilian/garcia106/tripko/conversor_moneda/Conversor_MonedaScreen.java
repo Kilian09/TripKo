@@ -6,6 +6,8 @@ import java.lang.ref.WeakReference;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.TripkoRepository;
 
 public class Conversor_MonedaScreen {
 
@@ -17,9 +19,11 @@ public class Conversor_MonedaScreen {
         String data = context.get().getString(R.string.app_name);
 
         AppMediator mediator = AppMediator.getInstance();
+        RepositoryContract repository = TripkoRepository.getInstance(context.get());
+
 
         Conversor_MonedaContract.Presenter presenter = new Conversor_MonedaPresenter(mediator);
-        Conversor_MonedaContract.Model model = new Conversor_MonedaModel(data);
+        Conversor_MonedaContract.Model model = new Conversor_MonedaModel(repository);
         presenter.injectModel(model);
         presenter.injectView(new WeakReference<>(view));
 

@@ -28,16 +28,15 @@ public interface Conversor_MonedaContract {
         void onPause();
 
         void onDestroy();
+
+        void onCalcularClicked(double cantidad, String divisa, String pasarA);
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
+        void convertirDivisa(double cantidad, String divisa, String pasarA);
 
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
+        double getResultado();
     }
 
 }

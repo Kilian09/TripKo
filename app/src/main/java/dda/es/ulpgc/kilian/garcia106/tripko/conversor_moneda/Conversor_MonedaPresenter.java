@@ -65,6 +65,14 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
         // Log.e(TAG, "onDestroy()");
     }
 
+    @Override
+    public void onCalcularClicked(double cantidad, String divisa, String pasarA) {
+        model.convertirDivisa(cantidad,divisa,pasarA);
+
+        state.resultado = String.valueOf(model.getResultado());
+
+        view.get().onDataUpdated(state);
+    }
 
 
     @Override
