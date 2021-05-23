@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -18,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
+import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalActivity;
 
 public class Conversor_MonedaActivity
         extends AppCompatActivity implements Conversor_MonedaContract.View {
@@ -124,6 +127,18 @@ public class Conversor_MonedaActivity
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_home:
+                presenter.navigateToMenuScreen();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+    @Override
     public void onDataUpdated(Conversor_MonedaViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
@@ -135,8 +150,8 @@ public class Conversor_MonedaActivity
     }
 
     @Override
-    public void navigateToNextScreen() {
-        Intent intent = new Intent(this, Conversor_MonedaActivity.class);
+    public void navigateToMenuScreen() {
+        Intent intent = new Intent(this, Menu_PrincipalActivity.class);
         startActivity(intent);
     }
 

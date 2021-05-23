@@ -9,7 +9,7 @@ public interface Conversor_MonedaContract {
 
         void onDataUpdated(Conversor_MonedaViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToMenuScreen();
     }
 
     interface Presenter {
@@ -30,6 +30,8 @@ public interface Conversor_MonedaContract {
         void onDestroy();
 
         void onCalcularClicked(double cantidad, String divisa, String pasarA);
+
+        void navigateToMenuScreen();
     }
 
     interface Model {

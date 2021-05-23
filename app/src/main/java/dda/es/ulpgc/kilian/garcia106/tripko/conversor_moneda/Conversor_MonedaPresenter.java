@@ -74,6 +74,11 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
         view.get().onDataUpdated(state);
     }
 
+    @Override
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
+    }
+
 
     @Override
     public void injectView(WeakReference<Conversor_MonedaContract.View> view) {
