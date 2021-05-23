@@ -4,6 +4,6 @@ public class Conversor_MonedaViewModel {
 
     // put the view state here
 
-    public double cantidad;
+    public double cantidad = 0;
     public String divisa,pasarA,resultado;
 }

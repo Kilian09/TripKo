@@ -100,27 +100,6 @@ public class Conversor_MonedaActivity
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        presenter.onBackPressed();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        presenter.onPause();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        presenter.onDestroy();
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
@@ -146,6 +125,7 @@ public class Conversor_MonedaActivity
         ((TextView) findViewById(R.id.cantidadTextView)).setText(R.string.cantidad_text_view);
         ((TextView) findViewById(R.id.divisaTextView)).setText(R.string.divisa_text);
         ((TextView) findViewById(R.id.pasarATextView)).setText(R.string.pasar_a_text);
+        ((TextView) findViewById(R.id.cantidadInputEditText)).setText(String.valueOf(viewModel.cantidad));
         ((TextView) findViewById(R.id.resultadoTextView)).setText(viewModel.resultado);
     }
 

@@ -5,6 +5,7 @@ import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.cultura.CulturaState;
+import dda.es.ulpgc.kilian.garcia106.tripko.gastronomia.Gastronomia_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
@@ -31,6 +32,8 @@ public class AppMediator {
     private Contactos_ListState contactos_listState = new Contactos_ListState();
 
     private Conversor_MonedaState conversor_monedaState = new Conversor_MonedaState();
+
+    private Gastronomia_ListState gastronomia_listState = new Gastronomia_ListState();
 
     private Transporte_CategoryState transporte_categoryState = new Transporte_CategoryState();
     private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
@@ -114,6 +117,14 @@ public class AppMediator {
 
     public void setContactos_ListState(Contactos_ListState contactos_listState) {
         this.contactos_listState = contactos_listState;
+    }
+
+    public Gastronomia_ListState getGastronomia_listState() {
+        return gastronomia_listState;
+    }
+
+    public void setGastronomia_listState(Gastronomia_ListState gastronomia_listState) {
+        this.gastronomia_listState = gastronomia_listState;
     }
 
     public Transporte_CategoryState getTransporte_CategoryState() {

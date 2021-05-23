@@ -23,12 +23,6 @@ public interface Conversor_MonedaContract {
 
         void onRestart();
 
-        void onBackPressed();
-
-        void onPause();
-
-        void onDestroy();
-
         void onCalcularClicked(double cantidad, String divisa, String pasarA);
 
         void navigateToMenuScreen();

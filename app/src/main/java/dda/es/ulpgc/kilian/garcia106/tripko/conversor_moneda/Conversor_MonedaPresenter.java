@@ -32,11 +32,9 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
 
     @Override
     public void onRestart() {
-        // Log.e(TAG, "onRestart()");
-
-        // update the model if is necessary
 
     }
+
 
     @Override
     public void onResume() {
@@ -50,20 +48,6 @@ public class Conversor_MonedaPresenter implements Conversor_MonedaContract.Prese
 
     }
 
-    @Override
-    public void onBackPressed() {
-        // Log.e(TAG, "onBackPressed()");
-    }
-
-    @Override
-    public void onPause() {
-        // Log.e(TAG, "onPause()");
-    }
-
-    @Override
-    public void onDestroy() {
-        // Log.e(TAG, "onDestroy()");
-    }
 
     @Override
     public void onCalcularClicked(double cantidad, String divisa, String pasarA) {
