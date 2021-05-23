@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_background"
     android:padding="0dp"
-    tools:context=".entretenimiento.EntretenimientoActivity">
+    tools:context=".sitiosturisticos.Sitios_TuristicosActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cabecera"
@@ -58,7 +58,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/entretenimientoTextView"
+        android:id="@+id/sitios_turisticosTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="600dp"
@@ -67,15 +67,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cabecera"
-        tools:text="@string/entretenimineto_btn_text" />
+        tools:text="@string/sitios_turisticos_btn_text" />
 
 
     <include
-        layout="@layout/activity_entretenimiento_detail_list"
+        layout="@layout/category_sitios_turisticos_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entretenimientoTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/sitios_turisticosTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

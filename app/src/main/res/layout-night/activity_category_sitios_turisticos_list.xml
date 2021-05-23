@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_background"
     android:padding="0dp"
-    tools:context=".sitiosturisticos.Sitios_TuristicosActivity">
+    tools:context=".category_sitios_turisticos.Category_Sitios_TuristicosActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cabecera"
@@ -71,7 +71,7 @@
 
 
     <include
-        layout="@layout/activity_sitios_turisticos_detail_list"
+        layout="@layout/category_sitios_turisticos_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
