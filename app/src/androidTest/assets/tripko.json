@@ -1,0 +1,32 @@
+{
+  "tripko": [
+    {
+      "gastronomia": [
+        {
+          "id": 1,
+          "title": "Seoul",
+          "restaurantes": [
+            {
+              "title": "오직한우",
+              "content": "Restaurante especializado en ternera al estilo coreano.\nHorario: 11:00 - 23:00\nTeléfono: +82 033-652-5715"
+            },
+            {
+              "title": "Gangneung Gamja Ongshimi",
+              "content": "Horario: (L-M y V-D) 10:30–15:00, 16:30–18:00\nTeléfono: +82 033-648-0340"
+            }
+          ],
+          "platos": [
+            {
+              "title": "Chobap",
+              "content": "El mejor chobap, un sushi coreano, está hecho de pescado capturado al amanecer y se consumen de forma inmediata. "
+            },
+            {
+              "title": "Sundubu",
+              "content": "Hecho con las limpias aguas del Seoraksan y sal del Mar del Este, el Sundubu, una especie de tofu sedoso al estilo coreano, tiene un sabor suave, liso y delicioso."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
