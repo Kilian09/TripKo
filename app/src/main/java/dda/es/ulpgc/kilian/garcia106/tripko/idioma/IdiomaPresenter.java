@@ -28,7 +28,7 @@ public class IdiomaPresenter implements IdiomaContract.Presenter {
         }
 
         // call the model and update the state
-        state.data = model.getStoredData();
+        //state.data = model.getStoredData();
 
 /*        // use passed state if is necessary
         PreviousToIdiomaState savedState = getStateFromPreviousScreen();
@@ -47,7 +47,7 @@ public class IdiomaPresenter implements IdiomaContract.Presenter {
         // Log.e(TAG, "onRestart()");
 
         // update the model if is necessary
-        model.onRestartScreen(state.data);
+        //model.onRestartScreen(state.data);
     }
 
     @Override
@@ -69,7 +69,7 @@ public class IdiomaPresenter implements IdiomaContract.Presenter {
         //state.data = model.getStoredData();
 
         // update the view
-        view.get().onDataUpdated(state);
+        //view.get().onDataUpdated(state);
 
     }
 
@@ -88,21 +88,27 @@ public class IdiomaPresenter implements IdiomaContract.Presenter {
         // Log.e(TAG, "onDestroy()");
     }
 
-/*    private NextToIdiomaState getStateFromNextScreen() {
-        return mediator.getNextIdiomaScreenState();
+    @Override
+    public void onIdiomaOptionClicked(int option) {
+        switch (option){
+            case 0:
+                view.get().navigateToIdiomaCoreanoScreen();
+                break;
+            case 1:
+                view.get().navigateToAlfabetoScreen();
+                break;
+            case 2:
+                view.get().navigateToExpresionesCategoryScreen();
+                break;
+            default:
+                break;
+        }
     }
 
-    private void passStateToNextScreen(IdiomaToNextState state) {
-        mediator.setNextIdiomaScreenState(state);
+    @Override
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
     }
-
-    private void passStateToPreviousScreen(IdiomaToPreviousState state) {
-        mediator.setPreviousIdiomaScreenState(state);
-    }
-
-    private PreviousToIdiomaState getStateFromPreviousScreen() {
-        return mediator.getPreviousIdiomaScreenState();
-    }*/
 
     @Override
     public void injectView(WeakReference<IdiomaContract.View> view) {
