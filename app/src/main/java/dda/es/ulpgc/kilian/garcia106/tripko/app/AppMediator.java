@@ -1,11 +1,14 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.category_entretenimiento.Category_EntretenimientoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.ciudades_principales.Ciudades_PrincipalesState;
 import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.cultura.CulturaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.data.GastronomiaItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_detail.Entretenimiento_DetailState;
+import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_list.Entretenimiento_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.gastronomia.Gastronomia_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
@@ -47,6 +50,10 @@ public class AppMediator {
     private CulturaState culturaState;
 
     private Ciudades_PrincipalesState ciudades_principalesState;
+
+    private Category_EntretenimientoState category_entretenimientoState;
+    private Entretenimiento_ListState entretenimiento_listState;
+    private Entretenimiento_DetailState entretenimiento_detailState;
 
     private GastronomiaItem gastronomia;
 
@@ -175,6 +182,19 @@ public class AppMediator {
     public CulturaState getCulturaState() { return culturaState; }
 
     public Ciudades_PrincipalesState getCiudades_PrincipalesState() { return ciudades_principalesState;
+    }
+
+    public void setCategory_EntretenimientoState(Category_EntretenimientoState category_entretenimientoState) {
+        this.category_entretenimientoState= category_entretenimientoState;
+    }
+
+    public void setEntretenimiento_ListState(Entretenimiento_ListState entretenimiento_listState) {
+    }
+
+    public Entretenimiento_ListState getEntretenimiento_ListState() { return entretenimiento_listState;
+    }
+
+    public Entretenimiento_DetailState getEntretenimiento_DetailState() { return entretenimiento_detailState;
     }
 
     public GastronomiaItem getGastronomia() {

@@ -14,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
+import dda.es.ulpgc.kilian.garcia106.tripko.category_entretenimiento.Category_EntretenimientoActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaActivity;
 import dda.es.ulpgc.kilian.garcia106.tripko.gastronomia.Gastronomia_ListActivity;
@@ -194,8 +195,8 @@ public class Menu_PrincipalActivity
 
     @Override
     public void navigateToEntretenimientoScreen() {
-        //Intent intent = new Intent(this, EntretenimientoActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Category_EntretenimientoActivity.class);
+        startActivity(intent);
     }
 
     @Override
