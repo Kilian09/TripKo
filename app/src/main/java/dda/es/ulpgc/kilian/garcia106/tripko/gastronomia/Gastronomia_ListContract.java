@@ -2,14 +2,18 @@ package dda.es.ulpgc.kilian.garcia106.tripko.gastronomia;
 
 import java.lang.ref.WeakReference;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.data.GastronomiaItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+
 public interface Gastronomia_ListContract {
 
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(Gastronomia_ListViewModel viewModel);
+        void displayGastronomiaListData(Gastronomia_ListViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToMenuScreen();
+
     }
 
     interface Presenter {
@@ -21,23 +25,17 @@ public interface Gastronomia_ListContract {
 
         void onStart();
 
-        void onRestart();
+        void navigateToMenuScreen();
 
-        void onBackPressed();
+        void selectGastronomiaListData(GastronomiaItem item);
 
-        void onPause();
-
-        void onDestroy();
+        void fetchGastronomiaListData();
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
+        void fetchGastronomiaListData(
+                RepositoryContract.GetGastronomiaListCallback callback);
     }
 
 }

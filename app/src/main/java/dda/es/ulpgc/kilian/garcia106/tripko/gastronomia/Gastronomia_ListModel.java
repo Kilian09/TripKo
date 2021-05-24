@@ -1,33 +1,35 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.gastronomia;
 
+import android.util.Log;
+
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+
 public class Gastronomia_ListModel implements Gastronomia_ListContract.Model {
 
     public static String TAG = Gastronomia_ListModel.class.getSimpleName();
 
-    private String data;
+    private RepositoryContract repository;
 
-    public Gastronomia_ListModel(String data) {
-        this.data = data;
+    public Gastronomia_ListModel(RepositoryContract repository) {
+        this.repository = repository;
     }
 
     @Override
-    public String getStoredData() {
-        // Log.e(TAG, "getStoredData()");
-        return data;
-    }
+    public void fetchGastronomiaListData(
+            final RepositoryContract.GetGastronomiaListCallback callback) {
 
-    @Override
-    public void onRestartScreen(String data) {
-        // Log.e(TAG, "onRestartScreen()");
-    }
+        Log.e(TAG, "fetchCategoryListData()");
 
-    @Override
-    public void onDataFromNextScreen(String data) {
-        // Log.e(TAG, "onDataFromNextScreen()");
-    }
+        repository.loadGastronomia(
+                true, new RepositoryContract.FetchGastronomiaDataCallback() {
 
-    @Override
-    public void onDataFromPreviousScreen(String data) {
-        // Log.e(TAG, "onDataFromPreviousScreen()");
+                    @Override
+                    public void onGastronomiaDataFetched(boolean error) {
+                        if(!error) {
+                            repository.getGastronomiaList(callback);
+                        }
+                    }
+                });
+
     }
 }

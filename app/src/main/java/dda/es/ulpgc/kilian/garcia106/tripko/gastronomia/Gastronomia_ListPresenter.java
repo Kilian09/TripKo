@@ -1,8 +1,11 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.gastronomia;
 
 import java.lang.ref.WeakReference;
+import java.util.List;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.GastronomiaItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
 
 public class Gastronomia_ListPresenter implements Gastronomia_ListContract.Presenter {
 
@@ -27,18 +30,6 @@ public class Gastronomia_ListPresenter implements Gastronomia_ListContract.Prese
             state = new Gastronomia_ListState();
         }
 
-        // call the model and update the state
-        state.data = model.getStoredData();
-
-
-    }
-
-    @Override
-    public void onRestart() {
-        // Log.e(TAG, "onRestart()");
-
-        // update the model if is necessary
-        model.onRestartScreen(state.data);
     }
 
     @Override
@@ -47,24 +38,40 @@ public class Gastronomia_ListPresenter implements Gastronomia_ListContract.Prese
 
 
         // update the view
-        view.get().onDataUpdated(state);
+        view.get().displayGastronomiaListData(state);
 
     }
 
     @Override
-    public void onBackPressed() {
-        // Log.e(TAG, "onBackPressed()");
+    public void fetchGastronomiaListData() {
+
+        // call the model
+        model.fetchGastronomiaListData(new RepositoryContract.GetGastronomiaListCallback() {
+
+            @Override
+            public void setGastronomiaList(List<GastronomiaItem> gastronomias) {
+                state.gastronomias = gastronomias;
+
+                view.get().displayGastronomiaListData(state);
+            }
+        });
     }
 
     @Override
-    public void onPause() {
-        // Log.e(TAG, "onPause()");
+    public void selectGastronomiaListData(GastronomiaItem item) {
+        passDataToGastronomiaListScreen(item);
+        view.get().navigateToMenuScreen();
+    }
+
+    private void passDataToGastronomiaListScreen(GastronomiaItem item) {
+        mediator.setGastronomia(item);
     }
 
     @Override
-    public void onDestroy() {
-        // Log.e(TAG, "onDestroy()");
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
     }
+
 
     @Override
     public void injectView(WeakReference<Gastronomia_ListContract.View> view) {

@@ -23,4 +23,13 @@ public class TripkoRepository implements RepositoryContract {
 
     }
 
+    @Override
+    public void loadGastronomia(boolean clearFirst, FetchGastronomiaDataCallback callback) {
+
+    }
+
+    @Override
+    public void getGastronomiaList(GetGastronomiaListCallback callback) {
+
+    }
 }
