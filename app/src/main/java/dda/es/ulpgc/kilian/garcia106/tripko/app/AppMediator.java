@@ -5,6 +5,7 @@ import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.cultura.CulturaState;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.GastronomiaItem;
 import dda.es.ulpgc.kilian.garcia106.tripko.gastronomia.Gastronomia_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma.IdiomaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_alfabeto.Idioma_AlfabetoState;
@@ -46,6 +47,8 @@ public class AppMediator {
     private CulturaState culturaState;
 
     private Ciudades_PrincipalesState ciudades_principalesState;
+
+    private GastronomiaItem gastronomia;
 
     private AppMediator() {
     }
@@ -172,5 +175,13 @@ public class AppMediator {
     public CulturaState getCulturaState() { return culturaState; }
 
     public Ciudades_PrincipalesState getCiudades_PrincipalesState() { return ciudades_principalesState;
+    }
+
+    public GastronomiaItem getGastronomia() {
+        return gastronomia;
+    }
+
+    public void setGastronomia(GastronomiaItem gastronomia) {
+        this.gastronomia = gastronomia;
     }
 }

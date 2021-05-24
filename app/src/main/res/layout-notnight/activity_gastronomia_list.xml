@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerLayout2"
+    android:id="@+id/gastronomiaDrawerLayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
@@ -21,19 +21,10 @@
         <include
             android:id="@+id/include"
             layout="@layout/gastronomia_list"
-            app:layout_constraintTop_toBottomOf="@+id/drawerLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/gastronomiaDrawerLayout"
             tools:layout_editor_absoluteX="-16dp" />
 
     </LinearLayout>
-
-    <NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/menu_lateral">
-
-    </NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
