@@ -94,13 +94,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-    <NavigationView
+<!--    <NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/menu_lateral">
 
-    </NavigationView>
+    </NavigationView>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>

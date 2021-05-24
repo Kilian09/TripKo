@@ -4,15 +4,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerLayout2"
+    android:id="@+id/alfabetoDrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fitsSystemWindows="true"
     tools:context=".idioma_alfabeto.Idioma_AlfabetoActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -20,38 +19,38 @@
 
         <ScrollView
             android:id="@+id/alfabeto_info"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/alfabeto_title"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="16sp"
-                    android:layout_marginLeft="16sp"
-                    android:layout_marginTop="16sp"
-                    android:textAlignment="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
                     android:text="@string/alfabeto_btn_text"
+                    android:textAlignment="center"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:drawableBottom="@drawable/alfabeto_coreano" />
+                    app:drawableBottomCompat="@drawable/alfabeto_coreano"/>
 
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
-    <NavigationView
+<!--    <NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/menu_lateral">
 
-    </NavigationView>
+    </NavigationView>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
