@@ -56,5 +56,55 @@
             }
           ]
         }
+      ],
+  "categoriesEntretenimiento": [
+    {
+      "id": 1,
+      "title": "Parques",
+      "entretenimientos": [
+        {
+          "id": 1,
+          "title": "Lotte World Adventure",
+          "detail": ""
+        },
+        {
+          "id": 2,
+          "title": "Ocean 700",
+          "detail": ""
+        }
       ]
+    },
+    {
+      "id": 2,
+      "title": "Actividades Nocturnas",
+      "entretenimientos": [
+        {
+        "id": 1,
+        "title": "AllByMySelf",
+        "detail": "Descripción del comeplejo."
+      },
+        {
+          "id": 2,
+          "title": "",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Con la Familia o Amigos",
+      "entretenimientos": [
+        {
+          "id": 1,
+          "title": "Karaoke Shinyun",
+          "detail": ""
+        },
+        {
+          "id": 2,
+          "title": "Family&Co",
+          "detail": ""
+        }
+      ]
+    }
+  ]
 }

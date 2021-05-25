@@ -2,14 +2,19 @@ package dda.es.ulpgc.kilian.garcia106.tripko.category_entretenimiento;
 
 import java.lang.ref.WeakReference;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.data.CategoryEntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+
 public interface Category_EntretenimientoContract {
 
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(Category_EntretenimientoViewModel viewModel);
+        void displayCategoryListData(Category_EntretenimientoViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToEntretenimientoScreen();
+
+        void navigateToMenuScreen();
     }
 
     interface Presenter {
@@ -17,27 +22,18 @@ public interface Category_EntretenimientoContract {
 
         void injectModel(Model model);
 
-        void onResume();
+        void navigateToEntretenimientoScreen();
 
-        void onStart();
+        void selectCategoryEntretenimientoListData(CategoryEntretenimientoItem item);
 
-        void onRestart();
+        void fetchCategoryListData();
 
-        void onBackPressed();
-
-        void onPause();
-
-        void onDestroy();
+        void navigateToMenuScreen();
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
+        void fetchCategoryEntretenimientoListData(RepositoryContract.GetCategoryEntretenimientoListCallback getCategoryEntretenimientoListCallback);
     }
 
 }

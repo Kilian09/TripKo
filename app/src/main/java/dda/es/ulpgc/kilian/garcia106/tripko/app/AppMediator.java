@@ -7,6 +7,8 @@ import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.conversor_moneda.Conversor_MonedaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.cultura.CulturaState;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.CategoryEntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.EntretenimientoItem;
 import dda.es.ulpgc.kilian.garcia106.tripko.data.GastronomiaItem;
 import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_detail.Entretenimiento_DetailState;
 import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_list.Entretenimiento_ListState;
@@ -63,6 +65,9 @@ public class AppMediator {
     private Category_Sitios_TuristicosState category_sitios_turisticosState=new Category_Sitios_TuristicosState();
     private Sitios_Turisticos_ListState sitios_turiscos_listState=new Sitios_Turisticos_ListState();
     private Sitios_Turisticos_DetailState sitios_turiscos_detailState=new Sitios_Turisticos_DetailState();
+
+    private CategoryEntretenimientoItem categoryEntretenimientoItem;
+    private EntretenimientoItem entretenimientoItem;
 
     private AppMediator() {
     }
@@ -191,8 +196,28 @@ public class AppMediator {
     public Ciudades_PrincipalesState getCiudades_PrincipalesState() { return ciudades_principalesState;
     }
 
+    public Category_EntretenimientoState getCategory_EntretenimientoState() {
+        return category_entretenimientoState;
+    }
+
     public void setCategory_EntretenimientoState(Category_EntretenimientoState category_entretenimientoState) {
         this.category_entretenimientoState= category_entretenimientoState;
+    }
+
+    public CategoryEntretenimientoItem getCategoryEntretenimientoItem() {
+        return categoryEntretenimientoItem;
+    }
+
+    public void setCategoryEntretenimientoItem(CategoryEntretenimientoItem categoryEntretenimientoItem) {
+        this.categoryEntretenimientoItem = categoryEntretenimientoItem;
+    }
+
+    public EntretenimientoItem getEntretenimientoItem() {
+        return entretenimientoItem;
+    }
+
+    public void setEntretenimientoItem(EntretenimientoItem entretenimientoItem) {
+        this.entretenimientoItem = entretenimientoItem;
     }
 
     public void setEntretenimiento_ListState(Entretenimiento_ListState entretenimiento_listState) {

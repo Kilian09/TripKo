@@ -1,33 +1,23 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_list;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.data.CategoryEntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+
 public class Entretenimiento_ListModel implements Entretenimiento_ListContract.Model {
 
     public static String TAG = Entretenimiento_ListModel.class.getSimpleName();
 
-    private String data;
+    private RepositoryContract repository;
 
-    public Entretenimiento_ListModel(String data) {
-        this.data = data;
+    public Entretenimiento_ListModel(RepositoryContract repository) {
+        this.repository = repository;
     }
 
-    @Override
-    public String getStoredData() {
-        // Log.e(TAG, "getStoredData()");
-        return data;
-    }
 
     @Override
-    public void onRestartScreen(String data) {
-        // Log.e(TAG, "onRestartScreen()");
-    }
+    public void fetchEntretenimientoListData(CategoryEntretenimientoItem category,
+                                             RepositoryContract.GetEntretenimientoListCallback callback) {
 
-    @Override
-    public void onDataFromNextScreen(String data) {
-        // Log.e(TAG, "onDataFromNextScreen()");
-    }
-
-    @Override
-    public void onDataFromPreviousScreen(String data) {
-        // Log.e(TAG, "onDataFromPreviousScreen()");
+        repository.getEntretenimientoList(category, callback);
     }
 }

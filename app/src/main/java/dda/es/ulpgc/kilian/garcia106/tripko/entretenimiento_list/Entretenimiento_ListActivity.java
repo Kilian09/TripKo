@@ -2,11 +2,18 @@ package dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_list;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.NavUtils;
+import androidx.recyclerview.widget.RecyclerView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.CategoryEntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.EntretenimientoItem;
 
 public class Entretenimiento_ListActivity
         extends AppCompatActivity implements Entretenimiento_ListContract.View {
@@ -15,64 +22,51 @@ public class Entretenimiento_ListActivity
 
     private Entretenimiento_ListContract.Presenter presenter;
 
+    private Entretenimiento_ListAdapter listAdapter;
+
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entretenimiento_list);
         getSupportActionBar().setTitle(R.string.app_name);
 
-    /*
-    if(savedInstanceState == null) {
-      AppMediator.resetInstance();
-    }
-    */
+        toolbar = findViewById(R.id.toolbar_top);
+        setSupportActionBar(toolbar);
+
+        listAdapter = new Entretenimiento_ListAdapter(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                EntretenimientoItem item = (EntretenimientoItem) view.getTag();
+                presenter.selectEntretenimientoListData(item);
+            }
+        });
+
+        RecyclerView recyclerView = findViewById(R.id.entretenimiento_list);
+        recyclerView.setAdapter(listAdapter);
 
         // do the setup
         Entretenimiento_ListScreen.configure(this);
 
-        if (savedInstanceState == null) {
-            presenter.onStart();
-
-        } else {
-            presenter.onRestart();
-        }
+        // do some work
+        presenter.fetchEntretenimientoListData();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        // load the data
-        presenter.onResume();
-    }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public void displayProductListData(Entretenimiento_ListViewModel viewModel) {
 
-        presenter.onBackPressed();
-    }
+        runOnUiThread(new Runnable() {
 
-    @Override
-    protected void onPause() {
-        super.onPause();
+            @Override
+            public void run() {
 
-        presenter.onPause();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        presenter.onDestroy();
-    }
-
-    @Override
-    public void onDataUpdated(Entretenimiento_ListViewModel viewModel) {
-        //Log.e(TAG, "onDataUpdated()");
-
-        // deal with the data
-        //  ((TextView) findViewById(R.id.data)).setText(viewModel.data);
+                // deal with the data
+                listAdapter.setItems(viewModel.entretenimientos);
+            }
+        });
     }
 
 
@@ -85,5 +79,15 @@ public class Entretenimiento_ListActivity
     @Override
     public void injectPresenter(Entretenimiento_ListContract.Presenter presenter) {
         this.presenter = presenter;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            NavUtils.navigateUpFromSameTask(this);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

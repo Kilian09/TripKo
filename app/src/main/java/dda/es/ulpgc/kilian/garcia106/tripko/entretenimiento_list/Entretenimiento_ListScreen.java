@@ -6,6 +6,8 @@ import java.lang.ref.WeakReference;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.TripkoRepository;
 
 public class Entretenimiento_ListScreen {
 
@@ -17,9 +19,10 @@ public class Entretenimiento_ListScreen {
         String data = context.get().getString(R.string.app_name);
 
         AppMediator mediator = AppMediator.getInstance();
+        RepositoryContract repository = TripkoRepository.getInstance(context.get());
 
         Entretenimiento_ListContract.Presenter presenter = new Entretenimiento_ListPresenter(mediator);
-        Entretenimiento_ListContract.Model model = new Entretenimiento_ListModel(data);
+        Entretenimiento_ListContract.Model model = new Entretenimiento_ListModel(repository);
         presenter.injectModel(model);
         presenter.injectView(new WeakReference<>(view));
 

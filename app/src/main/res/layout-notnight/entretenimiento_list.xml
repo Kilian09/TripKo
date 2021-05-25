@@ -7,4 +7,5 @@
     android:layout_height="match_parent"
     app:layoutManager="LinearLayoutManager"
     tools:context=".entretenimiento_list.Entretenimiento_ListActivity"
-    tools:listitem="@layout/entretenimiento_list_content" />
+    tools:listitem="@layout/entretenimiento_list_content"
+    tools:ignore="MissingDefaultResource" />
