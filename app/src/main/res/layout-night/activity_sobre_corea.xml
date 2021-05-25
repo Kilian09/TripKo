@@ -1,136 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sobreCorea_DrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_background"
+    android:fitsSystemWindows="true"
     android:padding="0dp"
-    tools:context=".sobrecorea.Sobre_CoreaActivity">
+    tools:context=".sobre_corea.Sobre_CoreaActivity"
+    tools:ignore="MissingDefaultResource">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cabecera"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#478BA2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageButton
-            android:id="@+id/preguntasFrecuentesImageButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/menu_desplegable"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tripkoText"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tripkoText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/rancho"
-            android:shadowColor="#FF4D00"
-            android:shadowRadius="6"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-            android:textColor="#F2A490"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/tripko_text" />
-
-        <ImageButton
-            android:id="@+id/homeImageButton"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toEndOf="@+id/tripkoText"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cabecera"
-        app:layout_constraintVertical_bias="0.48000002">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/LinearLayout"
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cabecera"
+            app:layout_constraintVertical_bias="0.48000002">
 
-            <TextView
-                android:id="@+id/sobreCoreaTitle"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="0dp"
-                android:layout_marginBottom="0dp"
-                android:gravity="center"
-                tools:text="@string/sobre_corea_title" />
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/restauranteImage1"
-                android:layout_width="match_parent"
-                android:layout_height="237dp"
-                app:srcCompat="@drawable/sobre_corea" />
+                <TextView
+                    android:id="@+id/sobreCoreaTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    tools:text="@string/sobre_corea_title" />
 
-            <TextView
-                android:id="@+id/sobreCoreaDescriptionText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                tools:text="@string/sobre_corea_text" />
+                <ImageView
+                    android:id="@+id/sobreCoreaImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="237dp"
+                    app:srcCompat="@drawable/sobre_corea" />
 
-            <ImageView
-                android:id="@+id/restauranteImage2"
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
-                app:srcCompat="@drawable/sobre_corea2" />
+                <TextView
+                    android:id="@+id/sobreCoreaDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    tools:text="@string/sobre_corea_text" />
 
-            <TextView
-                android:id="@+id/sobreCoreaText2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="0dp"
-                android:gravity="center"
-                tools:text="@string/sobre_corea_text2" />
+                <ImageView
+                    android:id="@+id/sobreCoreaImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    app:srcCompat="@drawable/sobre_corea2" />
 
-            <ImageButton
-                android:id="@+id/climaButton"
-                android:layout_width="match_parent"
-                android:layout_height="95dp"
-                android:background="@drawable/clima" />
+                <TextView
+                    android:id="@+id/sobreCoreaText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    tools:text="@string/sobre_corea_text2" />
 
-            <ImageButton
-                android:id="@+id/ciudadesPrincipalesButton"
-                android:layout_width="match_parent"
-                android:layout_height="95dp"
-                android:background="@drawable/ciudades_principales" />
+                <ImageButton
+                    android:id="@+id/climaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="95dp"
+                    android:background="@drawable/clima" />
 
-            <ImageButton
-                android:id="@+id/culturaButton"
-                android:layout_width="match_parent"
-                android:layout_height="95dp"
-                android:background="@drawable/cultura_sobre_corea" />
-        </LinearLayout>
-    </ScrollView>
+                <ImageButton
+                    android:id="@+id/ciudadesPrincipalesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/ciudades_principales" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageButton
+                    android:id="@+id/culturaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/cultura_sobre_corea" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

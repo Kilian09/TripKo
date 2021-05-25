@@ -89,16 +89,29 @@ public class Sobre_CoreaPresenter implements Sobre_CoreaContract.Presenter {
     }
 
     @Override
-    public void passDataToNextScreen(Sobre_CoreaState state) {
-        mediator.setSobre_CoreaState(state);
-    }
-
-    @Override
     public Sobre_CoreaState getDataFromPreviousScreen() {
         Sobre_CoreaState state = mediator.getSobre_CoreaState();
         return state;
     }
-
+    @Override
+    public void onSobreCoreaOptionClicked(int option) {
+        switch (option){
+            case 0:
+                view.get().navigateToClimaScreen();
+                break;
+            case 1:
+                view.get().navigateToCiudadesPrincipalesScreen();
+                break;
+            case 2:
+                view.get().navigateToCulturaScreen();
+                break;
+            default:
+                break;
+        }
+    }
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
+    }
     @Override
     public void injectView(WeakReference<Sobre_CoreaContract.View> view) {
         this.view = view;

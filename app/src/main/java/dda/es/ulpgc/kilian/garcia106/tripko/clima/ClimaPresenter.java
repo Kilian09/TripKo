@@ -4,6 +4,7 @@ import java.lang.ref.WeakReference;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
 import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaState;
+import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaViewModel;
 
 public class ClimaPresenter implements ClimaContract.Presenter {
 
@@ -112,6 +113,9 @@ public class ClimaPresenter implements ClimaContract.Presenter {
         return mediator.getPreviousClimaScreenState();
     }
      */
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
+    }
 
     @Override
     public void injectView(WeakReference<ClimaContract.View> view) {

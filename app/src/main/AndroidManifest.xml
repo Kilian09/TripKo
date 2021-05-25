@@ -29,6 +29,10 @@
         <activity android:name=".transporte_detail_list.Transporte_Detail_ListActivity"/>
         <activity android:name=".contactos_list.Contactos_ListActivity"/>
         <activity android:name=".sobre_corea.Sobre_CoreaActivity"/>
+        <activity android:name=".clima.ClimaActivity"/>
+        <activity android:name=".ciudades_principales.Ciudades_PrincipalesActivity"/>
+        <activity android:name=".cultura.CulturaActivity"/>
+
 
     </application>
 

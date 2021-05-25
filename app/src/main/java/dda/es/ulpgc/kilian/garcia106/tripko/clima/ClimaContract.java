@@ -2,14 +2,16 @@ package dda.es.ulpgc.kilian.garcia106.tripko.clima;
 
 import java.lang.ref.WeakReference;
 
+import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaViewModel;
+
 public interface ClimaContract {
 
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(ClimaViewModel viewModel);
+        void navigateToMenuScreen();
 
-        void navigateToNextScreen();
+        void onDataUpdated(ClimaViewModel viewModel);
     }
 
     interface Presenter {
@@ -30,6 +32,8 @@ public interface ClimaContract {
         void onDestroy();
 
         ClimaState getDataFromPreviousScreen();
+
+        void navigateToMenuScreen();
     }
 
     interface Model {

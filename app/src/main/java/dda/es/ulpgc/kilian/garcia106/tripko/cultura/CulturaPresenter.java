@@ -113,6 +113,10 @@ public class CulturaPresenter implements CulturaContract.Presenter {
 
      */
 
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
+    }
+
     @Override
     public void injectView(WeakReference<CulturaContract.View> view) {
         this.view = view;

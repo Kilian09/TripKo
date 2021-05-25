@@ -6,9 +6,16 @@
         <item>Ingles</item>
     </string-array>
 
+    <string-array name="Seul">
+        <item>Seúl</item>
+        <item>Capital de Corea del Sur y ciudad donde recide casi la mitad de la población de
+            este país. Es conciderada como la cuarta área metropolitana más grande del mundo y es
+            conocida por sus tiendas, palacios y museos.</item>
+    </string-array>
+
     <string-array name="Divisa">
-        <item>Euro</item>
         <item>KRW</item>
+        <item>Euro</item>
         <item>Dolar</item>
         <item>Libra</item>
     </string-array>

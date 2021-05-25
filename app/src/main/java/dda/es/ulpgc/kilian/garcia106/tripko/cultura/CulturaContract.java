@@ -9,7 +9,7 @@ public interface CulturaContract {
 
         void onDataUpdated(CulturaViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToMenuScreen();
     }
 
     interface Presenter {
@@ -30,6 +30,8 @@ public interface CulturaContract {
         void onDestroy();
 
         CulturaState getDataFromPreviousScreen();
+
+        void navigateToMenuScreen();
     }
 
     interface Model {

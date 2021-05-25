@@ -1,5 +1,10 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea;
 
+import android.view.Menu;
+import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+
 import java.lang.ref.WeakReference;
 
 public interface Sobre_CoreaContract {
@@ -9,7 +14,13 @@ public interface Sobre_CoreaContract {
 
         void onDataUpdated(Sobre_CoreaViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToMenuScreen();
+
+        void navigateToClimaScreen();
+
+        void navigateToCiudadesPrincipalesScreen();
+
+        void navigateToCulturaScreen();
     }
 
     interface Presenter {
@@ -29,9 +40,11 @@ public interface Sobre_CoreaContract {
 
         void onDestroy();
 
-        void passDataToNextScreen(Sobre_CoreaState state);
-
         Sobre_CoreaState getDataFromPreviousScreen();
+
+        void onSobreCoreaOptionClicked(int option);
+
+        void navigateToMenuScreen();
     }
 
     interface Model {
