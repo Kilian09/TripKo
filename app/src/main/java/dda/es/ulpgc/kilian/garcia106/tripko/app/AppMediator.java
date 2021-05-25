@@ -1,6 +1,7 @@
 package dda.es.ulpgc.kilian.garcia106.tripko.app;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.category_entretenimiento.Category_EntretenimientoState;
+import dda.es.ulpgc.kilian.garcia106.tripko.category_sitios_turisticos.Category_Sitios_TuristicosState;
 import dda.es.ulpgc.kilian.garcia106.tripko.ciudades_principales.Ciudades_PrincipalesState;
 import dda.es.ulpgc.kilian.garcia106.tripko.clima.ClimaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.contactos_list.Contactos_ListState;
@@ -16,6 +17,8 @@ import dda.es.ulpgc.kilian.garcia106.tripko.idioma_coreano.Idioma_CoreanoState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_category.Idioma_Expresiones_CategoryState;
 import dda.es.ulpgc.kilian.garcia106.tripko.idioma_expresiones_detail_list.Idioma_Expresiones_Detail_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.menu_principal.Menu_PrincipalState;
+import dda.es.ulpgc.kilian.garcia106.tripko.sitios_turisticos_detail.Sitios_Turisticos_DetailState;
+import dda.es.ulpgc.kilian.garcia106.tripko.sitios_turisticos_list.Sitios_Turisticos_ListState;
 import dda.es.ulpgc.kilian.garcia106.tripko.sobre_corea.Sobre_CoreaState;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_category.Transporte_CategoryState;
 import dda.es.ulpgc.kilian.garcia106.tripko.transporte_detail_list.Transporte_Detail_ListState;
@@ -43,19 +46,23 @@ public class AppMediator {
     private Transporte_SubcategoryState transporte_subcategoryState = new Transporte_SubcategoryState();
     private Transporte_Detail_ListState transporte_detail_listState = new Transporte_Detail_ListState();
 
+    private GastronomiaItem gastronomia;
+
     private Sobre_CoreaState sobre_coreaState;
 
-    private ClimaState climaState;
+    private ClimaState climaState=new ClimaState();
 
-    private CulturaState culturaState;
+    private CulturaState culturaState=new CulturaState();
 
-    private Ciudades_PrincipalesState ciudades_principalesState;
+    private Ciudades_PrincipalesState ciudades_principalesState=new Ciudades_PrincipalesState();
 
-    private Category_EntretenimientoState category_entretenimientoState;
-    private Entretenimiento_ListState entretenimiento_listState;
-    private Entretenimiento_DetailState entretenimiento_detailState;
+    private Category_EntretenimientoState category_entretenimientoState= new Category_EntretenimientoState();
+    private Entretenimiento_ListState entretenimiento_listState=new Entretenimiento_ListState();
+    private Entretenimiento_DetailState entretenimiento_detailState=new Entretenimiento_DetailState();
 
-    private GastronomiaItem gastronomia;
+    private Category_Sitios_TuristicosState category_sitios_turisticosState=new Category_Sitios_TuristicosState();
+    private Sitios_Turisticos_ListState sitios_turiscos_listState=new Sitios_Turisticos_ListState();
+    private Sitios_Turisticos_DetailState sitios_turiscos_detailState=new Sitios_Turisticos_DetailState();
 
     private AppMediator() {
     }
@@ -203,5 +210,19 @@ public class AppMediator {
 
     public void setGastronomia(GastronomiaItem gastronomia) {
         this.gastronomia = gastronomia;
+    }
+
+    public void setCategory_Sitios_TuristicosState(Category_Sitios_TuristicosState category_sitios_turisticosState) {
+        this.category_sitios_turisticosState=category_sitios_turisticosState;
+    }
+
+    public Sitios_Turisticos_ListState getSitios_Turisticos_ListState() { return sitios_turiscos_listState;
+    }
+
+    public void setSitios_Turisticos_ListState(Sitios_Turisticos_ListState sitios_turiscos_listState) {
+        this.sitios_turiscos_listState=sitios_turiscos_listState;
+    }
+
+    public Sitios_Turisticos_DetailState getSitios_Turisticos_DetailState() { return sitios_turiscos_detailState;
     }
 }
