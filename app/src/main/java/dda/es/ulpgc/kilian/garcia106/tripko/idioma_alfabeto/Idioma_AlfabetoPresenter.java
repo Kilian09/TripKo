@@ -88,21 +88,10 @@ public class Idioma_AlfabetoPresenter implements Idioma_AlfabetoContract.Present
         // Log.e(TAG, "onDestroy()");
     }
 
-/*    private NextToIdioma_AlfabetoState getStateFromNextScreen() {
-        return mediator.getNextIdioma_AlfabetoScreenState();
+    @Override
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
     }
-
-    private void passStateToNextScreen(Idioma_AlfabetoToNextState state) {
-        mediator.setNextIdioma_AlfabetoScreenState(state);
-    }
-
-    private void passStateToPreviousScreen(Idioma_AlfabetoToPreviousState state) {
-        mediator.setPreviousIdioma_AlfabetoScreenState(state);
-    }
-
-    private PreviousToIdioma_AlfabetoState getStateFromPreviousScreen() {
-        return mediator.getPreviousIdioma_AlfabetoScreenState();
-    }*/
 
     @Override
     public void injectView(WeakReference<Idioma_AlfabetoContract.View> view) {

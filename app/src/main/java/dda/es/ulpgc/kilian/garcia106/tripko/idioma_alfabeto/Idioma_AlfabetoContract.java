@@ -10,6 +10,8 @@ public interface Idioma_AlfabetoContract {
         void onDataUpdated(Idioma_AlfabetoViewModel viewModel);
 
         void navigateToNextScreen();
+
+        void navigateToMenuScreen();
     }
 
     interface Presenter {
@@ -28,6 +30,8 @@ public interface Idioma_AlfabetoContract {
         void onPause();
 
         void onDestroy();
+
+        void navigateToMenuScreen();
     }
 
     interface Model {
