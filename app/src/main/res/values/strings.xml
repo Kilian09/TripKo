@@ -99,6 +99,7 @@
     <!--    Strings de Ajustes -->
     <string name="modo_oscuro">Oscuro</string>
     <string name="idioma_ajustes">Idioma:</string>
+    <string name="contactos_num">123123123</string>
 
 
 </resources>

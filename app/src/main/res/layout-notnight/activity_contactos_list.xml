@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout2"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
     tools:context=".contactos_list.Contactos_ListActivity"
@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16sp"
+            android:layout_marginBottom="32sp"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -34,17 +35,19 @@
             layout="@layout/contactos_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
             />
 
     </LinearLayout>
 
-    <NavigationView
+<!--    <NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/menu_lateral">
 
-    </NavigationView>
+    </NavigationView>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
