@@ -241,7 +241,7 @@
                             android:id="@+id/contactos_de_interes_btn_img"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="36dp"
+                            android:layout_marginBottom="20sp"
                             app:srcCompat="@drawable/ic_btn_contactos" />
 
                         <TextView
