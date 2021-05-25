@@ -40,6 +40,7 @@ public class Idioma_CoreanoPresenter implements Idioma_CoreanoContract.Presenter
             // update the state if is necessary
             state.data = savedState.data;
         }*/
+        view.get().displayData(state);
     }
 
     @Override
@@ -47,7 +48,7 @@ public class Idioma_CoreanoPresenter implements Idioma_CoreanoContract.Presenter
         // Log.e(TAG, "onRestart()");
 
         // update the model if is necessary
-        model.onRestartScreen(state.data);
+        //model.onRestartScreen(state.data);
     }
 
     @Override
@@ -69,7 +70,7 @@ public class Idioma_CoreanoPresenter implements Idioma_CoreanoContract.Presenter
         //state.data = model.getStoredData();
 
         // update the view
-        view.get().onDataUpdated(state);
+        view.get().displayData(state);
 
     }
 
@@ -88,21 +89,10 @@ public class Idioma_CoreanoPresenter implements Idioma_CoreanoContract.Presenter
         // Log.e(TAG, "onDestroy()");
     }
 
-/*    private NextToIdioma_CoreanoState getStateFromNextScreen() {
-        return mediator.getNextIdioma_CoreanoScreenState();
+    @Override
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
     }
-
-    private void passStateToNextScreen(Idioma_CoreanoToNextState state) {
-        mediator.setNextIdioma_CoreanoScreenState(state);
-    }
-
-    private void passStateToPreviousScreen(Idioma_CoreanoToPreviousState state) {
-        mediator.setPreviousIdioma_CoreanoScreenState(state);
-    }
-
-    private PreviousToIdioma_CoreanoState getStateFromPreviousScreen() {
-        return mediator.getPreviousIdioma_CoreanoScreenState();
-    }*/
 
     @Override
     public void injectView(WeakReference<Idioma_CoreanoContract.View> view) {

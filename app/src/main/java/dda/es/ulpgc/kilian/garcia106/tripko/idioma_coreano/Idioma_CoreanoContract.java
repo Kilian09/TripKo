@@ -7,9 +7,10 @@ public interface Idioma_CoreanoContract {
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(Idioma_CoreanoViewModel viewModel);
+        void navigateToMenuScreen();
 
-        void navigateToNextScreen();
+        void displayData(Idioma_CoreanoViewModel viewModel);
+
     }
 
     interface Presenter {
@@ -28,16 +29,12 @@ public interface Idioma_CoreanoContract {
         void onPause();
 
         void onDestroy();
+
+        void navigateToMenuScreen();
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
     }
 
 }

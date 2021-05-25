@@ -6,6 +6,8 @@ import java.lang.ref.WeakReference;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.RepositoryContract;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.TripkoRepository;
 
 public class Idioma_CoreanoScreen {
 
@@ -17,9 +19,10 @@ public class Idioma_CoreanoScreen {
         String data = context.get().getString(R.string.app_name);
 
         AppMediator mediator = AppMediator.getInstance();
+        RepositoryContract repository = TripkoRepository.getInstance(context.get());
 
         Idioma_CoreanoContract.Presenter presenter = new Idioma_CoreanoPresenter(mediator);
-        Idioma_CoreanoContract.Model model = new Idioma_CoreanoModel(data);
+        Idioma_CoreanoContract.Model model = new Idioma_CoreanoModel(repository);
         presenter.injectModel(model);
         presenter.injectView(new WeakReference<>(view));
 
