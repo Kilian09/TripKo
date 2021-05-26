@@ -30,7 +30,6 @@ public class Ciudades_PrincipalesActivity
     private NavigationView navigationView;
 
     private TextView ciudadesPrincipalesTitle, tripkoTitleText;
-    private Spinner seulSpinner, busanSpinner, incheonSpinner, daeguSpinner, daejeonSpinner;
     private ImageView seulImage, busanImage, incheonImage, deaguImage, daejeonImage;
 
 
@@ -50,11 +49,6 @@ public class Ciudades_PrincipalesActivity
         ciudadesPrincipalesTitle = findViewById(R.id.ciudadesPrincipalesTitle);
         ciudadesPrincipalesTitle.setText(R.string.ciudades_principales_title);
 
-        seulSpinner = findViewById(R.id.seulSpinner);
-        busanSpinner = findViewById(R.id.busanSpinner);
-        incheonSpinner = findViewById(R.id.incheonSpinner);
-        daeguSpinner = findViewById(R.id.daeguSpinner);
-        daejeonSpinner = findViewById(R.id.daejeonSpinner);
 
         seulImage=findViewById(R.id.n1_seul);
         busanImage=findViewById(R.id.n2_busan);
