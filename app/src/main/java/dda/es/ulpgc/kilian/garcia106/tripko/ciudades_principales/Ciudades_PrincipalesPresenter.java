@@ -108,5 +108,4 @@ public class Ciudades_PrincipalesPresenter implements Ciudades_PrincipalesContra
     public void injectModel(Ciudades_PrincipalesContract.Model model) {
         this.model = model;
     }
-
 }

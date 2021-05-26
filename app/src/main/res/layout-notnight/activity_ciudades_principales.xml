@@ -57,7 +57,7 @@
                         android:id="@+id/seulTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10sp"
                         android:fontFamily="@font/rancho"
                         android:textSize="50sp"
@@ -67,6 +67,23 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/textSeulLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/seulImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/seul" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/busanLinearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6sp"
@@ -83,8 +100,8 @@
                         android:id="@+id/busanTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_marginLeft="10sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5sp"
                         android:fontFamily="@font/rancho"
                         android:textSize="50sp"
                         tools:text="@string/ciudades_principales_busan" />
@@ -92,9 +109,26 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/textBusanLinerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/busanImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-20sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/busan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/incheonLinearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10sp"
+                    android:layout_marginTop="-5sp"
                     android:layout_marginEnd="10sp"
                     android:foregroundGravity="center">
 
@@ -118,6 +152,23 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/textIncheonLinerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/incheonImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="-20sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/incheon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/daeguLinerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7sp"
@@ -144,9 +195,27 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/textDaeguLinerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/daeguImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="-20sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/daegu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/daejeonLinerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10sp"
+                    android:layout_marginTop="-10sp"
                     android:layout_marginEnd="10sp"
                     android:foregroundGravity="center">
 
@@ -166,7 +235,21 @@
                         android:textSize="50sp"
                         tools:text="@string/ciudades_principales_daejeon" />
 
+                </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/textDaejeonLinerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/daejeonImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-20sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/daejeon" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

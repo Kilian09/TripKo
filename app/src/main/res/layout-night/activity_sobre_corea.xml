@@ -50,7 +50,7 @@
                 <ImageView
                     android:id="@+id/sobreCoreaImage1"
                     android:layout_width="match_parent"
-                    android:layout_height="237dp"
+                    android:layout_height="237sp"
                     app:srcCompat="@drawable/sobre_corea" />
 
                 <TextView
@@ -63,32 +63,32 @@
                 <ImageView
                     android:id="@+id/sobreCoreaImage2"
                     android:layout_width="match_parent"
-                    android:layout_height="165dp"
+                    android:layout_height="165sp"
                     app:srcCompat="@drawable/sobre_corea2" />
 
                 <TextView
                     android:id="@+id/sobreCoreaText2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="140sp"
                     tools:text="@string/sobre_corea_text2" />
 
                 <ImageButton
                     android:id="@+id/climaButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="95dp"
+                    android:layout_height="95sp"
                     android:background="@drawable/clima" />
 
                 <ImageButton
                     android:id="@+id/ciudadesPrincipalesButton"
                     android:layout_width="match_parent"
-                    android:layout_height="95dp"
+                    android:layout_height="95sp"
                     android:background="@drawable/ciudades_principales" />
 
                 <ImageButton
                     android:id="@+id/culturaButton"
                     android:layout_width="match_parent"
-                    android:layout_height="95dp"
+                    android:layout_height="95sp"
                     android:background="@drawable/cultura_sobre_corea" />
             </LinearLayout>
         </ScrollView>

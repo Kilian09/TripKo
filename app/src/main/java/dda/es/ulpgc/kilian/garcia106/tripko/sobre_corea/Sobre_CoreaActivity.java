@@ -172,20 +172,6 @@ public class Sobre_CoreaActivity
         // deal with the data
     //    ((TextView) findViewById(R.id.data)).setText(viewModel.data);
     }
-/*
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_home:
-                presenter.navigateToMenuScreen();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
-    }
-
- */
 
     @Override
     public void injectPresenter(Sobre_CoreaContract.Presenter presenter) {

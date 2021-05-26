@@ -94,24 +94,6 @@ public class CulturaPresenter implements CulturaContract.Presenter {
         CulturaState state = mediator.getCulturaState();
         return state;
     }
-    /*
-    private NextToCulturaState getStateFromNextScreen() {
-        return mediator.getNextCulturaScreenState();
-    }
-
-    private void passStateToNextScreen(CulturaToNextState state) {
-        mediator.setNextCulturaScreenState(state);
-    }
-
-    private void passStateToPreviousScreen(CulturaToPreviousState state) {
-        mediator.setPreviousCulturaScreenState(state);
-    }
-
-    private PreviousToCulturaState getStateFromPreviousScreen() {
-        return mediator.getPreviousCulturaScreenState();
-    }
-
-     */
 
     public void navigateToMenuScreen() {
         view.get().navigateToMenuScreen();

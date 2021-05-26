@@ -29,8 +29,10 @@ public class Ciudades_PrincipalesActivity
 
     private NavigationView navigationView;
 
-    private TextView ciudadesPrincipalesTitle, tripkoTitleText;
-    private ImageView seulImage, busanImage, incheonImage, deaguImage, daejeonImage;
+    private TextView ciudadesPrincipalesTitle, tripkoTitleText, seulTitle, busanTitle, incheonTitle,
+            deaguTitle, daejeonTitle;
+    private ImageView seulImage1, seulImage2, busanImage1, busanImage2, incheonImage1, incheonImage2,
+            deaguImage1, deaguImage2, daejeonImage1, daejeonImage2;
 
 
     @Override
@@ -49,12 +51,28 @@ public class Ciudades_PrincipalesActivity
         ciudadesPrincipalesTitle = findViewById(R.id.ciudadesPrincipalesTitle);
         ciudadesPrincipalesTitle.setText(R.string.ciudades_principales_title);
 
+        seulTitle = findViewById(R.id.seulTitle);
+        seulTitle.setText(R.string.ciudades_principales_seul);
+        busanTitle = findViewById(R.id.busanTitle);
+        busanTitle.setText(R.string.ciudades_principales_busan);
+        incheonTitle = findViewById(R.id.incheonTitle);
+        incheonTitle.setText(R.string.ciudades_principales_incheon);
+        deaguTitle = findViewById(R.id.daeguTitle);
+        deaguTitle.setText(R.string.ciudades_principales_daegu);
+        daejeonTitle = findViewById(R.id.daejeonTitle);
+        daejeonTitle.setText(R.string.ciudades_principales_daejeon);
 
-        seulImage=findViewById(R.id.n1_seul);
-        busanImage=findViewById(R.id.n2_busan);
-        incheonImage=findViewById(R.id.n3_incheon);
-        deaguImage=findViewById(R.id.n4_daegu);
-        daejeonImage=findViewById(R.id.n5_daejeon);
+        seulImage1=findViewById(R.id.n1_seul);
+        busanImage1=findViewById(R.id.n2_busan);
+        incheonImage1=findViewById(R.id.n3_incheon);
+        deaguImage1=findViewById(R.id.n4_daegu);
+        daejeonImage1=findViewById(R.id.n5_daejeon);
+
+        seulImage2=findViewById(R.id.seulImage);
+        busanImage2=findViewById(R.id.busanImage);
+        incheonImage2=findViewById(R.id.incheonImage);
+        deaguImage2=findViewById(R.id.daeguImage);
+        daejeonImage2=findViewById(R.id.daejeonImage);
 
     /*
     if(savedInstanceState == null) {
@@ -88,6 +106,12 @@ public class Ciudades_PrincipalesActivity
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
 
@@ -107,12 +131,6 @@ public class Ciudades_PrincipalesActivity
 
         // deal with the data
         //((TextView) findViewById(R.id.data)).setText(viewModel.data);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_toolbar, menu);
-        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
