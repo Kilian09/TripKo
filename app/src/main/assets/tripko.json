@@ -1,5 +1,148 @@
 {
-      "gastronomia": [
+  "categoriesExpresiones": [
+    {
+      "id": 1,
+      "content": "Nivel Básico",
+      "expresiones": [
+        {
+          "id": 1,
+          "contentEs": "Hola",
+          "contentKR": "안녕하세요",
+          "contentPR": "annyeonghaseyo"
+        },
+        {
+          "id": 2,
+          "contentEs": "Adiós",
+          "contentKR": "안녕히 가세요\nannyeonghi gaseyo"
+        },
+        {
+          "id": 3,
+          "contentEs": "Sí",
+          "contentKR": "네",
+          "contentPR": "ne"
+        },
+        {
+          "id": 4,
+          "contentEs": "No",
+          "contentKR": "아니요",
+          "contentPR": "aniyo"
+        },
+        {
+          "id": 5,
+          "contentEs": "Por favor",
+          "contentKR": "제발",
+          "contentPR": "jebal"
+        },
+        {
+          "id": 6,
+          "contentEs": "Gracias",
+          "contentKR": "감사합니다",
+          "contentPR": "gamsahabnida"
+        },
+        {
+          "id": 7,
+          "contentEs": "De nada",
+          "contentKR": "천만에",
+          "contentPR": "cheonman-e"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "content": "Nivel Turista",
+      "expresiones": [
+        {
+          "id": 1,
+          "contentEs": "Hola",
+          "contentKR": "안녕하세요",
+          "contentPR": "annyeonghaseyo"
+        },
+        {
+          "id": 2,
+          "contentEs": "Adiós",
+          "contentKR": "안녕히 가세요\nannyeonghi gaseyo"
+        },
+        {
+          "id": 3,
+          "contentEs": "Sí",
+          "contentKR": "네",
+          "contentPR": "ne"
+        },
+        {
+          "id": 4,
+          "contentEs": "No",
+          "contentKR": "아니요",
+          "contentPR": "aniyo"
+        },
+        {
+          "id": 5,
+          "contentEs": "Por favor",
+          "contentKR": "제발",
+          "contentPR": "jebal"
+        },
+        {
+          "id": 6,
+          "contentEs": "Gracias",
+          "contentKR": "감사합니다",
+          "contentPR": "gamsahabnida"
+        },
+        {
+          "id": 7,
+          "contentEs": "De nada",
+          "contentKR": "천만에",
+          "contentPR": "cheonman-e"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "content": "Nivel Trotamundos",
+      "expresiones": [
+        {
+          "id": 1,
+          "contentEs": "Hola",
+          "contentKR": "안녕하세요",
+          "contentPR": "annyeonghaseyo"
+        },
+        {
+          "id": 2,
+          "contentEs": "Adiós",
+          "contentKR": "안녕히 가세요\nannyeonghi gaseyo"
+        },
+        {
+          "id": 3,
+          "contentEs": "Sí",
+          "contentKR": "네",
+          "contentPR": "ne"
+        },
+        {
+          "id": 4,
+          "contentEs": "No",
+          "contentKR": "아니요",
+          "contentPR": "aniyo"
+        },
+        {
+          "id": 5,
+          "contentEs": "Por favor",
+          "contentKR": "제발",
+          "contentPR": "jebal"
+        },
+        {
+          "id": 6,
+          "contentEs": "Gracias",
+          "contentKR": "감사합니다",
+          "contentPR": "gamsahabnida"
+        },
+        {
+          "id": 7,
+          "contentEs": "De nada",
+          "contentKR": "천만에",
+          "contentPR": "cheonman-e"
+        }
+      ]
+    }
+  ],
+  "gastronomia": [
         {
           "id": 1,
           "title": "Seoul",
