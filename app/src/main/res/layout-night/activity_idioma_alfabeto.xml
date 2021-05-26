@@ -37,7 +37,8 @@
                     android:textAlignment="center"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:drawableBottomCompat="@drawable/alfabeto_coreano" />
+                    app:drawableBottomCompat="@drawable/alfabeto_coreano"
+                    android:theme="@style/IconBlanco"/>
 
             </LinearLayout>
         </ScrollView>
