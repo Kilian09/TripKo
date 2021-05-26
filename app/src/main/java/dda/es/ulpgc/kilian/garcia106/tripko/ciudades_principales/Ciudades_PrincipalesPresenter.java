@@ -88,23 +88,10 @@ public class Ciudades_PrincipalesPresenter implements Ciudades_PrincipalesContra
     public void onDestroy() {
         // Log.e(TAG, "onDestroy()");
     }
-/*
-    private NextToCiudades_PrincipalesState getStateFromNextScreen() {
-        return mediator.getNextCiudades_PrincipalesScreenState();
-    }
 
-    private void passStateToNextScreen(Ciudades_PrincipalesToNextState state) {
-        mediator.setNextCiudades_PrincipalesScreenState(state);
+    public void navigateToMenuScreen() {
+        view.get().navigateToMenuScreen();
     }
-
-    private void passStateToPreviousScreen(Ciudades_PrincipalesToPreviousState state) {
-        mediator.setPreviousCiudades_PrincipalesScreenState(state);
-    }
-
-    private PreviousToCiudades_PrincipalesState getStateFromPreviousScreen() {
-        return mediator.getPreviousCiudades_PrincipalesScreenState();
-    }
- */
 
     @Override
     public Ciudades_PrincipalesState getDataFromPreviousScreen() {

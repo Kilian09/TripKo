@@ -5,11 +5,11 @@ import java.lang.ref.WeakReference;
 public interface Ciudades_PrincipalesContract {
 
     interface View {
+        void navigateToMenuScreen();
+
         void injectPresenter(Presenter presenter);
 
         void onDataUpdated(Ciudades_PrincipalesViewModel viewModel);
-
-        void navigateToNextScreen();
     }
 
     interface Presenter {

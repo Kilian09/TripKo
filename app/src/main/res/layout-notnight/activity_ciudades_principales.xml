@@ -7,32 +7,150 @@
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <include layout="@layout/toolbar" />
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/ciudadesPrincipalesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5sp"
+            android:textSize="24sp"
+            tools:text="@string/ciudades_principales_title" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foregroundGravity="center"
             android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/divisaSpinner"
-                style="@android:style/Widget.Material.Light.Spinner.Underlined"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/seulLinearLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/Seul" />
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="10sp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/n1_seul"
+                    android:layout_width="73sp"
+                    android:layout_height="80sp"
+                    app:srcCompat="@drawable/n1" />
+
+                <Spinner
+                    android:id="@+id/seulSpinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Seul"
+                    android:scrollbarSize="4sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginEnd="10sp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/n2_busan"
+                    android:layout_width="80sp"
+                    android:layout_height="96sp"
+                    app:srcCompat="@drawable/n2" />
+
+                <Spinner
+                    android:id="@+id/busanSpinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Busan"
+                    android:scrollbarSize="4sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/n3_incheon"
+                    android:layout_width="75dp"
+                    android:layout_height="91dp"
+                    app:srcCompat="@drawable/n3" />
+
+                <Spinner
+                    android:id="@+id/incheonSpinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Incheon"
+                    android:scrollbarSize="4sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="10sp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/n4_daegu"
+                    android:layout_width="77sp"
+                    android:layout_height="93sp"
+                    app:srcCompat="@drawable/n4" />
+
+                <Spinner
+                    android:id="@+id/daeguSpinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Daegu"
+                    android:scrollbarSize="4sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:foregroundGravity="center">
+
+                <ImageView
+                    android:id="@+id/n5_daejeon"
+                    android:layout_width="75dp"
+                    android:layout_height="91dp"
+                    app:srcCompat="@drawable/n5" />
+
+                <Spinner
+                    android:id="@+id/daejeonSpinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:entries="@array/Daejeon"
+                    android:scrollbarSize="4sp" />
+            </LinearLayout>
+
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="75dp"
-            android:layout_height="91dp"
-            app:srcCompat="@drawable/n1" />
-
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
