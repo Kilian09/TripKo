@@ -50,15 +50,16 @@ public class Entretenimiento_ListPresenter implements Entretenimiento_ListContra
 
     @Override
     public void selectEntretenimientoListData(EntretenimientoItem item) {
+        passDataToEntretenimientoDetailScreen(item);
+        view.get().navigateToEntretenimientoDetailScreen();
+    }
 
+    private void passDataToEntretenimientoDetailScreen(EntretenimientoItem item) {
+        mediator.setEntretenimientoItem(item);
     }
 
     private CategoryEntretenimientoItem getDataFromCategoryEntretenimientoListScreen() {
         return mediator.getCategoryEntretenimientoItem();
-    }
-
-     private void passStateToNextScreen(Entretenimiento_ListState entretenimiento_listState) {
-        mediator.setEntretenimiento_ListState(entretenimiento_listState);
     }
 
     @Override

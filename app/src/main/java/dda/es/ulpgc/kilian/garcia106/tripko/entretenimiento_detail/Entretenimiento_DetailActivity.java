@@ -2,11 +2,15 @@ package dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_detail;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.EntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_list.Entretenimiento_ListActivity;
 
 public class Entretenimiento_DetailActivity
         extends AppCompatActivity implements Entretenimiento_DetailContract.View {
@@ -15,71 +19,48 @@ public class Entretenimiento_DetailActivity
 
     private Entretenimiento_DetailContract.Presenter presenter;
 
+    private Toolbar toolbar;
+    private TextView tripkoTitleText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entretenimiento_detail);
-        getSupportActionBar().setTitle(R.string.app_name);
 
-    /*
-    if(savedInstanceState == null) {
-      AppMediator.resetInstance();
-    }
-    */
+
+        toolbar = findViewById(R.id.toolbar_top);
+        setSupportActionBar(toolbar);
+
+        tripkoTitleText = findViewById(R.id.tripkoText);
+        tripkoTitleText.setText(R.string.app_name);
 
         // do the setup
         Entretenimiento_DetailScreen.configure(this);
 
-        if (savedInstanceState == null) {
-            presenter.onStart();
-
-        } else {
-            presenter.onRestart();
-        }
+     presenter.fetchEntretenimientoDetailData();
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
-        // load the data
-        presenter.onResume();
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        presenter.onBackPressed();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        presenter.onPause();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        presenter.onDestroy();
-    }
-
-    @Override
-    public void onDataUpdated(Entretenimiento_DetailViewModel viewModel) {
+    public void displayEntretenimientoDetailData(Entretenimiento_DetailViewModel viewModel) {
         //Log.e(TAG, "onDataUpdated()");
 
         // deal with the data
-        //((TextView) findViewById(R.id.data)).setText(viewModel.data);
-    }
+        EntretenimientoItem entretenimiento = viewModel.entretenimiento;
 
+        ((TextView) findViewById(R.id.titleTextView)).setText(entretenimiento.title);
+        ((TextView) findViewById(R.id.detalleTextView)).setText(entretenimiento.detail);
+
+
+        }
 
     @Override
-    public void navigateToNextScreen() {
-        Intent intent = new Intent(this, Entretenimiento_DetailActivity.class);
-        startActivity(intent);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            navigateUpTo(new Intent(this, Entretenimiento_ListActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

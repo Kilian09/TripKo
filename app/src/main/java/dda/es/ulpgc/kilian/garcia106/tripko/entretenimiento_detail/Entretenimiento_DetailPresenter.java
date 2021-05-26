@@ -3,6 +3,7 @@ package dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_detail;
 import java.lang.ref.WeakReference;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.app.AppMediator;
+import dda.es.ulpgc.kilian.garcia106.tripko.data.EntretenimientoItem;
 
 public class Entretenimiento_DetailPresenter implements Entretenimiento_DetailContract.Presenter {
 
@@ -19,93 +20,18 @@ public class Entretenimiento_DetailPresenter implements Entretenimiento_DetailCo
     }
 
     @Override
-    public void onStart() {
-        // Log.e(TAG, "onStart()");
-
-        // initialize the state if is necessary
-        if (state == null) {
-            state = new Entretenimiento_DetailState();
+    public void fetchEntretenimientoDetailData() {
+        // set passed state
+        EntretenimientoItem entretenimiento = getDataFromEntretenimientoListScreen();
+        if(entretenimiento != null) {
+            state.entretenimiento = entretenimiento;
         }
-
-        // call the model and update the state
-        state.data = model.getStoredData();
-
-        // use passed state if is necessary
-        Entretenimiento_DetailState savedState = getStateFromPreviousScreen();
-        if (savedState != null) {
-
-            // update the model if is necessary
-            model.onDataFromPreviousScreen(savedState.data);
-
-            // update the state if is necessary
-            state.data = savedState.data;
-        }
+        view.get().displayEntretenimientoDetailData(state);
     }
 
-    @Override
-    public void onRestart() {
-        // Log.e(TAG, "onRestart()");
-
-        // update the model if is necessary
-        model.onRestartScreen(state.data);
+    private EntretenimientoItem getDataFromEntretenimientoListScreen() {
+        return mediator.getEntretenimientoItem();
     }
-
-    @Override
-    public void onResume() {
-        // Log.e(TAG, "onResume()");
-
-        // use passed state if is necessary
-        Entretenimiento_DetailState savedState = getStateFromPreviousScreen();
-        if (savedState != null) {
-
-            // update the model if is necessary
-            model.onDataFromNextScreen(savedState.data);
-
-            // update the state if is necessary
-            state.data = savedState.data;
-        }
-
-        // call the model and update the state
-        //state.data = model.getStoredData();
-
-        // update the view
-        view.get().onDataUpdated(state);
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        // Log.e(TAG, "onBackPressed()");
-    }
-
-    @Override
-    public void onPause() {
-        // Log.e(TAG, "onPause()");
-    }
-
-    @Override
-    public void onDestroy() {
-        // Log.e(TAG, "onDestroy()");
-    }
-
-    private Entretenimiento_DetailState getStateFromPreviousScreen() {
-        return mediator.getEntretenimiento_DetailState();
-    }
-/*
-    private NextToEntretenimiento_DetailState getStateFromNextScreen() {
-        return mediator.getNextEntretenimiento_DetailScreenState();
-    }
-
-    private void passStateToNextScreen(Entretenimiento_DetailToNextState state) {
-        mediator.setNextEntretenimiento_DetailScreenState(state);
-    }
-
-    private void passStateToPreviousScreen(Entretenimiento_DetailToPreviousState state) {
-        mediator.setPreviousEntretenimiento_DetailScreenState(state);
-    }
-
-
- */
 
     @Override
     public void injectView(WeakReference<Entretenimiento_DetailContract.View> view) {
@@ -116,5 +42,7 @@ public class Entretenimiento_DetailPresenter implements Entretenimiento_DetailCo
     public void injectModel(Entretenimiento_DetailContract.Model model) {
         this.model = model;
     }
+
+
 
 }

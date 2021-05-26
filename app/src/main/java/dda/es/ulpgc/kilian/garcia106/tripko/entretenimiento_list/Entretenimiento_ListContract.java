@@ -13,7 +13,7 @@ public interface Entretenimiento_ListContract {
 
         void displayProductListData(Entretenimiento_ListViewModel viewModel);
 
-        void navigateToNextScreen();
+        void navigateToEntretenimientoDetailScreen();
     }
 
     interface Presenter {

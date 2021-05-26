@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
 import dda.es.ulpgc.kilian.garcia106.tripko.data.CategoryEntretenimientoItem;
 import dda.es.ulpgc.kilian.garcia106.tripko.data.EntretenimientoItem;
+import dda.es.ulpgc.kilian.garcia106.tripko.entretenimiento_detail.Entretenimiento_DetailActivity;
 
 public class Entretenimiento_ListActivity
         extends AppCompatActivity implements Entretenimiento_ListContract.View {
@@ -70,8 +71,8 @@ public class Entretenimiento_ListActivity
 
 
     @Override
-    public void navigateToNextScreen() {
-        Intent intent = new Intent(this, Entretenimiento_ListActivity.class);
+    public void navigateToEntretenimientoDetailScreen() {
+        Intent intent = new Intent(this, Entretenimiento_DetailActivity.class);
         startActivity(intent);
     }
 

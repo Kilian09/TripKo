@@ -7,9 +7,8 @@ public interface Entretenimiento_DetailContract {
     interface View {
         void injectPresenter(Presenter presenter);
 
-        void onDataUpdated(Entretenimiento_DetailViewModel viewModel);
+        void displayEntretenimientoDetailData(Entretenimiento_DetailViewModel viewModel);
 
-        void navigateToNextScreen();
     }
 
     interface Presenter {
@@ -17,17 +16,8 @@ public interface Entretenimiento_DetailContract {
 
         void injectModel(Model model);
 
-        void onResume();
 
-        void onStart();
-
-        void onRestart();
-
-        void onBackPressed();
-
-        void onPause();
-
-        void onDestroy();
+        void fetchEntretenimientoDetailData();
     }
 
     interface Model {
