@@ -34,6 +34,27 @@
         por su gastronomía, cultura o zonas turísticas... Estas son las cinco principales ciudades
         de Corea del Sur:</string>
 
+    <string name="ciudades_principales_seul">Seúl</string>
+    <string name="ciudades_principales_busan">Busan</string>
+    <string name="ciudades_principales_incheon">Incheon</string>
+    <string name="ciudades_principales_daegu">Daegu</string>
+    <string name="ciudades_principales_daejeon">Daejeon</string>
+    <string name="seul_text">Capital de Corea del Sur y ciudad donde recide casi la mitad de la población de
+    este país. Es conciderada como la cuarta área metropolitana más grande del mundo y es
+    conocida por sus tiendas, palacios y museos.</string>
+    <string name="busan_text">Busan, anteriormente conocida como Pusan, está ubicada en el extremo sureste del país,
+            al lado de la costa. Es la segunda ciudad más grande de Corea del Sur, dispone del puerto
+            más importante del país y es donde está la sede de la Bolsa de Corea del Sur. También es
+            conocida por su gran atractivo turístico y sus playas.</string>
+    <string name="incheon_text">Está ubicada en el extremo noroeste del país y posee el aeropuerto y el centro de
+            transporte más grande del país. Muchas veces se considera, de forma errónea, que es
+            parte de Seúl por su cercanía y sus conecciones por metro.</string>
+    <string name="daegu_text">Ciudad tranquila y con gran peso histórico. Es bastante conservadora y conocida por
+            sus bases militares.</string>
+    <string name="daejeon_text">Se ubica en el centro del país y es la capital de la provincia de Chungcheong del
+            Sur. Es una ciudad con hermosas vistas y templos, además de ser una de las principales
+            zonas empresariales del país.</string>
+
     <string name="cultura_title">Cultura</string>
     <string name="cultura_text">  Corea del Sur es un país rico culturalmente. Desde sus vestimentas
         tradicionales, conocidas como Hanbok, hasta su música y tradiciones.</string>
