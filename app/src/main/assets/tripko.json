@@ -142,6 +142,312 @@
       ]
     }
   ],
+  "categoriesTransporte": [
+    {
+      "id": 1,
+      "content": "Aeropuertos",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Aeropuertos Internacionales",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Aeropuerto Internacional de Yangyang",
+              "detail": "Opera vuelos internacionales a Kitakyushu en Japón, además de vuelos nacionales a Gimhae, Jeju y Muan.\n    No todas las líneas operan diariamente, por lo que se requiere verificar con anticipación.\n\nDirección:\n    Gonghang-ro 201, Sonyang-myeon, Yangyang-gun, Gangwon-do (강원도 양양군 손양면 공항로 201)\n\nConsultas:\n    Información general\n    Teléfono: +82-1661-2626 (coreano, inglés, japonés)\n\n    Centro de Atención al Cliente en el Aeropuerto\n    Ubicación: Cerca de la puerta 2 del piso 1.\n        La atención en idiomas extranjeros está sujeta a la disponibilidad de personal."
+            },
+            {
+              "id": 2,
+              "title": "Aeropuerto Internacional de Gimpo",
+              "detail": "Desde aquí se operan vuelos a ciudades de Japón como Tokio y Osaka; o de China como Beijing y Shanghái; y también de Taiwán. Hay vuelos nacionales a Jeju, Gwangju, Gimhae y otras ciudades.\n    No todas las líneas operan diariamente, por lo que se requiere verificar con anticipación.\n\nDirección:\n    Haneul-gil 38, Gangseo-gu, Seúl (서울특별시 강서구 하늘길 38)\n\nConsultas:\n    Información general\n    Teléfono: +82-2660-2486 (coreano, chino, japonés)\n    \n    Centro de Atención al Cliente en el Aeropuerto\n    Ubicación: Frente a la puerta 1 del piso 1 del ala Internacional.\n        La atención en idiomas extranjeros está sujeta a la disponibilidad de personal."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Aeropuertos Nacionales",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Aeropuerto Nacional 1",
+              "detail": "Descripción an1"
+            },
+            {
+              "id": 2,
+              "title": "Aeropuerto Nacional 2",
+              "detail": "Descripción an2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "content": "Ferrocarril",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Ferrocarril 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Ferrocarril 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Ferrocarril 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Ferrocarril 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Ferrocarril 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Ferrocarril 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "content": "Autobuses",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Autobuses 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Autobuses 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Autobuses 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Autobuses 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Autobuses 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Autobuses 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "content": "Metro",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Metro 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Metro 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Metro 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Metro 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Metro 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Metro 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "content": "Ferri",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Ferri 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Ferri 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Ferri 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Ferri 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Ferri 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Ferri 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "content": "Taxis",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Taxis 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Taxis 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Taxis 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Taxis 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Taxis 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Taxis 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "content": "Alquiler de coches",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Alquiler de coches 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Alquiler de coches 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Alquiler de coches 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Alquiler de coches 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Alquiler de coches 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Alquiler de coches 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "content": "Tarjetas de transporte",
+      "transportes": [
+        {
+          "id": 1,
+          "content": "Tarjetas de transporte 1",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Tarjetas de transporte 11",
+              "detail": "Descripción f11"
+            },
+            {
+              "id": 2,
+              "title": "Tarjetas de transporte 12",
+              "detail": "Descripción f12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Tarjetas de transporte 2",
+          "detailsList": [
+            {
+              "id": 1,
+              "title": "Tarjetas de transporte 21",
+              "detail": "Descripción f21"
+            },
+            {
+              "id": 2,
+              "title": "Tarjetas de transporte 22",
+              "detail": "Descripción f22"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "gastronomia": [
         {
           "id": 1,
