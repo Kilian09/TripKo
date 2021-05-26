@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import dda.es.ulpgc.kilian.garcia106.tripko.R;
@@ -27,7 +28,10 @@ public class Category_EntretenimientoActivity
 
     private Category_EntretenimientoAdapter listAdapter;
 
+    private DrawerLayout drawerLayout;
+
     private Toolbar toolbar;
+    private TextView tripkoTitleText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +42,14 @@ public class Category_EntretenimientoActivity
         toolbar = findViewById(R.id.toolbar_top);
         setSupportActionBar(toolbar);
 
-        listAdapter = new Category_EntretenimientoAdapter(new View.OnClickListener() {
+        tripkoTitleText = findViewById(R.id.tripkoText);
+        tripkoTitleText.setText(R.string.app_name);
 
-            @Override
-            public void onClick(View view) {
-                CategoryEntretenimientoItem item = (CategoryEntretenimientoItem) view.getTag();
-                presenter.selectCategoryEntretenimientoListData(item);
-            }
+        drawerLayout = findViewById(R.id.categoryEntretenimientoDrawerLayout);
+
+        listAdapter = new Category_EntretenimientoAdapter(view -> {
+            CategoryEntretenimientoItem item = (CategoryEntretenimientoItem) view.getTag();
+            presenter.selectCategoryEntretenimientoListData(item);
         });
 
         RecyclerView recyclerView = findViewById(R.id.categoryEntretenimiento_list);
@@ -54,7 +59,7 @@ public class Category_EntretenimientoActivity
         // do the setup
         Category_EntretenimientoScreen.configure(this);
 
-       presenter.fetchCategoryListData();
+        presenter.fetchCategoryListData();
     }
 
     @Override
@@ -67,6 +72,7 @@ public class Category_EntretenimientoActivity
             public void run() {
 
                 // deal with the data
+                ((TextView) findViewById(R.id.entretenimientoTextView)).setText(R.string.entretenimiento_title);
                 listAdapter.setItems(viewModel.categories);
             }
 

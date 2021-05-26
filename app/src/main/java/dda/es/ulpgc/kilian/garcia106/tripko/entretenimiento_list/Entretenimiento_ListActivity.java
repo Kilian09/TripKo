@@ -30,7 +30,6 @@ public class Entretenimiento_ListActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entretenimiento_list);
-        getSupportActionBar().setTitle(R.string.app_name);
 
         toolbar = findViewById(R.id.toolbar_top);
         setSupportActionBar(toolbar);

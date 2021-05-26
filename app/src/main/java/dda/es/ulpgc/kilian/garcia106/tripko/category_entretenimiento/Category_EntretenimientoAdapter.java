@@ -58,15 +58,15 @@ class Category_EntretenimientoAdapter extends RecyclerView.Adapter<Category_Entr
         holder.itemView.setTag(itemList.get(position));
         holder.itemView.setOnClickListener(clickListener);
 
-        holder.categoryEntretenimientoButton.setText(itemList.get(position).title);
+        holder.categoryEntretenimiento.setText(itemList.get(position).title);
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final Button categoryEntretenimientoButton;
+        final TextView categoryEntretenimiento;
 
         ViewHolder(View view) {
             super(view);
-            categoryEntretenimientoButton = view.findViewById(R.id.entretenimientoButton);
+            categoryEntretenimiento = view.findViewById(R.id.entrtenimientoTextViewContent);
         }
     }
 }

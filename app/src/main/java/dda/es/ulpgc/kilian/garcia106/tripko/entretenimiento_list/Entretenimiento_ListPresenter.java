@@ -28,7 +28,7 @@ public class Entretenimiento_ListPresenter implements Entretenimiento_ListContra
         // Log.e(TAG, "fetchEntretenimientoListData()");
 
         // set passed state
-        CategoryEntretenimientoItem category = mediator.getCategoryEntretenimientoItem();
+        CategoryEntretenimientoItem category = getDataFromCategoryEntretenimientoListScreen();
 
         if (category != null) {
             state.category = category;
@@ -53,8 +53,8 @@ public class Entretenimiento_ListPresenter implements Entretenimiento_ListContra
 
     }
 
-    private Entretenimiento_ListState getStateFromNextScreen() {
-        return mediator.getEntretenimiento_ListState();
+    private CategoryEntretenimientoItem getDataFromCategoryEntretenimientoListScreen() {
+        return mediator.getCategoryEntretenimientoItem();
     }
 
      private void passStateToNextScreen(Entretenimiento_ListState entretenimiento_listState) {

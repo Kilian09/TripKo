@@ -51,8 +51,9 @@ public class Entretenimiento_ListAdapter extends RecyclerView.Adapter<Entretenim
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.entretenimientoButton1.setText(itemList.get(position).title);
-        holder.entretenimientoButton1.setText(itemList.get(position).title2);
+        holder.entretenimientoTextViewIzq.setText(itemList.get(position).title);
+     //   holder.entretenimientoTextViewDere.setText(itemList.get(position).title2);
+
 
         holder.itemView.setTag(itemList.get(position));
         holder.itemView.setOnClickListener(clickListener);
@@ -64,13 +65,13 @@ public class Entretenimiento_ListAdapter extends RecyclerView.Adapter<Entretenim
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final Button entretenimientoButton1;
-        final Button entretenimientoButton2;
+        final TextView entretenimientoTextViewIzq;
+       // final TextView entretenimientoTextViewDere;
 
         ViewHolder(View view) {
             super(view);
-            entretenimientoButton1 = view.findViewById(R.id.entretenimientoButton);
-            entretenimientoButton2 = view.findViewById(R.id.entretenimientoButton2);
+            entretenimientoTextViewIzq = view.findViewById(R.id.entretenimientoTextIzq);
+           // entretenimientoTextViewDere = view.findViewById(R.id.entretenimientoTextDere);
         }
     }
 }

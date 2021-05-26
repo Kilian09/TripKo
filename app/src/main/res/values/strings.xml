@@ -80,6 +80,7 @@
 
     <!--    Strings de Entretenimiento -->
     <string name="entretenimiento_text">Parques</string>
+    <string name="entretenimiento_title">Entretenimiento</string>
 
     <!--    Strings de Gastronomia -->
     <string name="regiones">Region</string>
